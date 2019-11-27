@@ -1,0 +1,6 @@
+framework module LJViewKit {
+  umbrella header "LJViewKit-umbrella.h"
+
+  export *
+  module * { export * }
+}
