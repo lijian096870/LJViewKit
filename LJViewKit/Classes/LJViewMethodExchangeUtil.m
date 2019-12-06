@@ -43,6 +43,7 @@ static BOOL run2 = YES;
 }
 
 + (void)methodMoveChangeBlock_MethodExchange:(Class)calss {
+    
     [self methodMoveChangeBlock_MethodExchange_willMoveToWindow:calss];
     
     [self methodMoveChangeBlock_MethodExchange_didMoveToWindow:calss];
