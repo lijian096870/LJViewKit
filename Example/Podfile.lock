@@ -4,7 +4,7 @@ PODS:
   - FBSnapshotTestCase/Core (2.1.4)
   - FBSnapshotTestCase/SwiftSupport (2.1.4):
     - FBSnapshotTestCase/Core
-  - LJViewKit (1.1.0)
+  - LJViewKit (2.0.1)
 
 DEPENDENCIES:
   - FBSnapshotTestCase
@@ -20,8 +20,8 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   FBSnapshotTestCase: 094f9f314decbabe373b87cc339bea235a63e07a
-  LJViewKit: a3c0e034746d50563870f9fcd59d0f6d239307e8
+  LJViewKit: 6544562b269f80ac5dbabea231141c5c6c552c26
 
-PODFILE CHECKSUM: d2ba33f4677c50fe30b9eb35fb2e34012bb3ce2f
+PODFILE CHECKSUM: b7b5417a1fedaa32cbfe6a87c1a055ee0a723ded
 
 COCOAPODS: 1.7.5

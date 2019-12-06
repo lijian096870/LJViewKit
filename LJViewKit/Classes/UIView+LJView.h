@@ -6,21 +6,12 @@
 //  Copyright © 2018年 LJ. All rights reserved.
 //
 
-
 #import <UIKit/UIKit.h>
-
-
+#import "LJViewModel.h"
 #import "LJViewKit.h"
 
 @interface UIView (LJView)
 
-@property(nonatomic,assign,readwrite)BOOL callbackOn;
-
-
--(void)setFrame:(CGRect)frame and:(BOOL)callback;
-
--(void)setFrameChangeBlock:(viewFrameChangeBlock)block;
--(void)addFrameChangeBlock:(viewFrameChangeBlock)block;
-
+- (LJViewModel *)viewFrameChangeMoveWindowChangeModel;
 
 @end
