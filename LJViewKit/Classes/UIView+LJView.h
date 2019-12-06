@@ -14,4 +14,6 @@
 
 - (LJViewModel *)viewFrameChangeMoveWindowChangeModel;
 
+- (LJViewModel *)viewFrameChangeMoveWindowChangeModelMayBenil;
+
 @end

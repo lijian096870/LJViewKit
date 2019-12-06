@@ -8,14 +8,6 @@
 
 #import "LJViewModel.h"
 
-@interface UIView ()
-
-+ (void)methodFrameChangeBlock_MethodExchang;
-
-+ (void)methodMoveChangeBlock_MethodExchange;
-
-@end
-
 @interface LJViewModel ()
 
 @property(nonatomic, weak) UIView *view;
@@ -26,36 +18,31 @@
 
 - (void)SetFrameWillChangeBlock:(viewFrameChangeBlock)block {
     if (block) {
-        [UIView methodFrameChangeBlock_MethodExchang];
         self.willChangeBlock = block;
     }
 }
 
 - (void)AddFrameWillChangeBlock:(viewFrameChangeBlock)block {
     if (block) {
-        [UIView methodFrameChangeBlock_MethodExchang];
-
+      
         [self.willChangeArray addObject:block];
     }
 }
 
 - (void)SetFrameDidChangeBlock:(viewFrameChangeBlock)block {
     if (block) {
-        [UIView methodFrameChangeBlock_MethodExchang];
         self.didChangeBlock = block;
     }
 }
 
 - (void)AddFrameDidChangeBlock:(viewFrameChangeBlock)block {
     if (block) {
-        [UIView methodFrameChangeBlock_MethodExchang];
         [self.didChangeArray addObject:block];
     }
 }
 
 - (void)SetWindowWillMoveBlock:(viewWindowChangeBlock)block {
     if (block) {
-        [UIView methodMoveChangeBlock_MethodExchange];
         self.willMoveBlock = block;
     }
 
@@ -66,7 +53,6 @@
 
 - (void)AddWindowWillMoveBlock:(viewWindowChangeBlock)block {
     if (block) {
-        [UIView methodMoveChangeBlock_MethodExchange];
         [self.willMoveArray addObject:block];
     }
 
@@ -77,7 +63,6 @@
 
 - (void)SetWindowDidMoveBlock:(viewWindowChangeBlock)block {
     if (block) {
-        [UIView methodMoveChangeBlock_MethodExchange];
         self.didMoveBlock = block;
     }
 
@@ -88,7 +73,6 @@
 
 - (void)AddWindowDidMoveBlock:(viewWindowChangeBlock)block {
     if (block) {
-        [UIView methodMoveChangeBlock_MethodExchange];
         [self.didMoveArray addObject:block];
     }
 
@@ -99,7 +83,6 @@
 
 - (void)SetWindowWillAddBlock:(viewWindowChangeBlock)block {
     if (block) {
-        [UIView methodMoveChangeBlock_MethodExchange];
         self.willAddBlock = block;
     }
 
@@ -110,7 +93,6 @@
 
 - (void)AddWindowWillAddBlock:(viewWindowChangeBlock)block {
     if (block) {
-        [UIView methodMoveChangeBlock_MethodExchange];
         [self.willAddArray addObject:block];
     }
 
@@ -121,7 +103,6 @@
 
 - (void)SetWindowDidAddBlock:(viewWindowChangeBlock)block {
     if (block) {
-        [UIView methodMoveChangeBlock_MethodExchange];
         self.didAddBlock = block;
     }
 
@@ -132,8 +113,7 @@
 
 - (void)AddWindowDidAddBlock:(viewWindowChangeBlock)block {
     if (block) {
-        [UIView methodMoveChangeBlock_MethodExchange];
-
+    
         [self.didAddArray addObject:block];
     }
 

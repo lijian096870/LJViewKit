@@ -7,10 +7,11 @@
 //
 #import "LJViewKit.h"
 #import "UIView+LJView.h"
-
+#import "LJViewMethodExchangeUtil.h"
 void viewsetFrameChangeBlock(UIView *view, viewFrameChangeBlock block)
 {
     if ([view isKindOfClass:UIView.class] && block) {
+        [LJViewMethodExchangeUtil methodFrameChangeBlock_MethodExchang];
         LJViewModel *model = [view viewFrameChangeMoveWindowChangeModel];
         [model SetFrameDidChangeBlock:block];
     }
@@ -19,6 +20,7 @@ void viewsetFrameChangeBlock(UIView *view, viewFrameChangeBlock block)
 void viewAddFrameChangeBlock(UIView *view, viewFrameChangeBlock block)
 {
     if ([view isKindOfClass:UIView.class] && block) {
+        [LJViewMethodExchangeUtil methodFrameChangeBlock_MethodExchang];
         LJViewModel *model = [view viewFrameChangeMoveWindowChangeModel];
         [model AddFrameDidChangeBlock:block];
     }
@@ -27,6 +29,7 @@ void viewAddFrameChangeBlock(UIView *view, viewFrameChangeBlock block)
 void SetFrameWillChangeBlock(UIView *view, viewFrameChangeBlock block)
 {
     if ([view isKindOfClass:UIView.class] && block) {
+        [LJViewMethodExchangeUtil methodFrameChangeBlock_MethodExchang];
         LJViewModel *model = [view viewFrameChangeMoveWindowChangeModel];
         [model SetFrameWillChangeBlock:block];
     }
@@ -35,6 +38,7 @@ void SetFrameWillChangeBlock(UIView *view, viewFrameChangeBlock block)
 void AddFrameWillChangeBlock(UIView *view, viewFrameChangeBlock block)
 {
     if ([view isKindOfClass:UIView.class] && block) {
+        [LJViewMethodExchangeUtil methodFrameChangeBlock_MethodExchang];
         LJViewModel *model = [view viewFrameChangeMoveWindowChangeModel];
         [model AddFrameWillChangeBlock:block];
     }
@@ -43,6 +47,7 @@ void AddFrameWillChangeBlock(UIView *view, viewFrameChangeBlock block)
 void SetFrameDidChangeBlock(UIView *view, viewFrameChangeBlock block)
 {
     if ([view isKindOfClass:UIView.class] && block) {
+        [LJViewMethodExchangeUtil methodFrameChangeBlock_MethodExchang];
         LJViewModel *model = [view viewFrameChangeMoveWindowChangeModel];
         [model SetFrameDidChangeBlock:block];
     }
@@ -51,6 +56,7 @@ void SetFrameDidChangeBlock(UIView *view, viewFrameChangeBlock block)
 void AddFrameDidChangeBlock(UIView *view, viewFrameChangeBlock block)
 {
     if ([view isKindOfClass:UIView.class] && block) {
+        [LJViewMethodExchangeUtil methodFrameChangeBlock_MethodExchang];
         LJViewModel *model = [view viewFrameChangeMoveWindowChangeModel];
         [model AddFrameDidChangeBlock:block];
     }
@@ -59,6 +65,7 @@ void AddFrameDidChangeBlock(UIView *view, viewFrameChangeBlock block)
 void SetWindowWillMoveBlock(UIView *view, viewWindowChangeBlock block)
 {
     if ([view isKindOfClass:UIView.class] && block) {
+        [LJViewMethodExchangeUtil methodMoveChangeBlock_MethodExchange:view.class];
         LJViewModel *model = [view viewFrameChangeMoveWindowChangeModel];
         [model SetWindowWillMoveBlock:block];
     }
@@ -67,6 +74,7 @@ void SetWindowWillMoveBlock(UIView *view, viewWindowChangeBlock block)
 void AddWindowWillMoveBlock(UIView *view, viewWindowChangeBlock block)
 {
     if ([view isKindOfClass:UIView.class] && block) {
+        [LJViewMethodExchangeUtil methodMoveChangeBlock_MethodExchange:view.class];
         LJViewModel *model = [view viewFrameChangeMoveWindowChangeModel];
         [model AddWindowWillMoveBlock:block];
     }
@@ -75,6 +83,7 @@ void AddWindowWillMoveBlock(UIView *view, viewWindowChangeBlock block)
 void SetWindowDidMoveBlock(UIView *view, viewWindowChangeBlock block)
 {
     if ([view isKindOfClass:UIView.class] && block) {
+        [LJViewMethodExchangeUtil methodMoveChangeBlock_MethodExchange:view.class];
         LJViewModel *model = [view viewFrameChangeMoveWindowChangeModel];
         [model SetWindowDidMoveBlock:block];
     }
@@ -83,6 +92,7 @@ void SetWindowDidMoveBlock(UIView *view, viewWindowChangeBlock block)
 void AddWindowDidMoveBlock(UIView *view, viewWindowChangeBlock block)
 {
     if ([view isKindOfClass:UIView.class] && block) {
+        [LJViewMethodExchangeUtil methodMoveChangeBlock_MethodExchange:view.class];
         LJViewModel *model = [view viewFrameChangeMoveWindowChangeModel];
         [model AddWindowDidMoveBlock:block];
     }
@@ -91,6 +101,7 @@ void AddWindowDidMoveBlock(UIView *view, viewWindowChangeBlock block)
 void SetWindowWillAddBlock(UIView *view, viewWindowChangeBlock block)
 {
     if ([view isKindOfClass:UIView.class] && block) {
+        [LJViewMethodExchangeUtil methodMoveChangeBlock_MethodExchange:view.class];
         LJViewModel *model = [view viewFrameChangeMoveWindowChangeModel];
         [model SetWindowWillAddBlock:block];
     }
@@ -99,6 +110,7 @@ void SetWindowWillAddBlock(UIView *view, viewWindowChangeBlock block)
 void AddWindowWillAddBlock(UIView *view, viewWindowChangeBlock block)
 {
     if ([view isKindOfClass:UIView.class] && block) {
+        [LJViewMethodExchangeUtil methodMoveChangeBlock_MethodExchange:view.class];
         LJViewModel *model = [view viewFrameChangeMoveWindowChangeModel];
         [model AddWindowWillAddBlock:block];
     }
@@ -107,6 +119,7 @@ void AddWindowWillAddBlock(UIView *view, viewWindowChangeBlock block)
 void SetWindowDidAddBlock(UIView *view, viewWindowChangeBlock block)
 {
     if ([view isKindOfClass:UIView.class] && block) {
+        [LJViewMethodExchangeUtil methodMoveChangeBlock_MethodExchange:view.class];
         LJViewModel *model = [view viewFrameChangeMoveWindowChangeModel];
         [model SetWindowDidAddBlock:block];
     }
@@ -115,6 +128,7 @@ void SetWindowDidAddBlock(UIView *view, viewWindowChangeBlock block)
 void AddWindowDidAddBlock(UIView *view, viewWindowChangeBlock block)
 {
     if ([view isKindOfClass:UIView.class] && block) {
+        [LJViewMethodExchangeUtil methodMoveChangeBlock_MethodExchange:view.class];
         LJViewModel *model = [view viewFrameChangeMoveWindowChangeModel];
         [model AddWindowDidAddBlock:block];
     }

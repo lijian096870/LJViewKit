@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		0978FEF1E925744EEAF7E76217BF4A86 /* FBSnapshotTestCase.h in Headers */ = {isa = PBXBuildFile; fileRef = BF231DD85753C39424F0F58A879E8294 /* FBSnapshotTestCase.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		19F37CC50E23DE48D4345923514B8F98 /* UIApplication+StrictKeyWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = AA305E8AE2A0531EB3AA3E9958E7E2E5 /* UIApplication+StrictKeyWindow.m */; };
+		248B2009239A20350060130E /* LJViewMethodExchangeUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = 248B2007239A20350060130E /* LJViewMethodExchangeUtil.h */; };
+		248B200A239A20350060130E /* LJViewMethodExchangeUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 248B2008239A20350060130E /* LJViewMethodExchangeUtil.m */; };
 		3B33584F0918EBE2086D0FADBA56F547 /* LJViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = DC2D8A9DF48102882FED91AEB7A5B7F3 /* LJViewModel.m */; };
 		50544CC39838135DDBF0047A180E97F4 /* FBSnapshotTestCasePlatform.h in Headers */ = {isa = PBXBuildFile; fileRef = 1BB8800FEBEFE94A390F54FF049C0F04 /* FBSnapshotTestCasePlatform.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		510962FC5FFB2D51E63371C149ADD944 /* LJViewKit.h in Headers */ = {isa = PBXBuildFile; fileRef = B2D5737A30F6D3A44CE6AAD410853A55 /* LJViewKit.h */; settings = {ATTRIBUTES = (Project, ); }; };
@@ -67,20 +69,22 @@
 		133B70FDA298B1C75AEA6D9B4DFB9D7C /* UIImage+Compare.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+Compare.h"; path = "FBSnapshotTestCase/Categories/UIImage+Compare.h"; sourceTree = "<group>"; };
 		1A3BCBCDCE9AB1C81BEF4FF139B33C52 /* UIImage+Compare.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+Compare.m"; path = "FBSnapshotTestCase/Categories/UIImage+Compare.m"; sourceTree = "<group>"; };
 		1BB8800FEBEFE94A390F54FF049C0F04 /* FBSnapshotTestCasePlatform.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSnapshotTestCasePlatform.h; path = FBSnapshotTestCase/FBSnapshotTestCasePlatform.h; sourceTree = "<group>"; };
+		248B2007239A20350060130E /* LJViewMethodExchangeUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LJViewMethodExchangeUtil.h; sourceTree = "<group>"; };
+		248B2008239A20350060130E /* LJViewMethodExchangeUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LJViewMethodExchangeUtil.m; sourceTree = "<group>"; };
 		25A6B83B99996AB0D345D1F73BBFADC0 /* UIImage+Diff.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+Diff.h"; path = "FBSnapshotTestCase/Categories/UIImage+Diff.h"; sourceTree = "<group>"; };
 		2C2DD3F231C706FE97C0CD4CDC68288B /* LJViewKit.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LJViewKit.m; path = LJViewKit/Classes/LJViewKit.m; sourceTree = "<group>"; };
 		2F636D660EF6259041A0D28E5AE1A9BD /* Pods-LJViewKit_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LJViewKit_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		31A15F3033B22E55513DE3E3AE4D36D0 /* Pods-LJViewKit_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-LJViewKit_Tests-umbrella.h"; sourceTree = "<group>"; };
-		34F183014646ADFA08D1C999981F6448 /* libPods-LJViewKit_Example.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-LJViewKit_Example.a"; path = "libPods-LJViewKit_Example.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		3B897DAE36B95A375FB7C37297EC68B9 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		34F183014646ADFA08D1C999981F6448 /* libPods-LJViewKit_Example.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LJViewKit_Example.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3B897DAE36B95A375FB7C37297EC68B9 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		465570D4218BF349873EB798D3E44272 /* FBSnapshotTestCase.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = FBSnapshotTestCase.modulemap; sourceTree = "<group>"; };
 		4D01AD2C5AB45315B06720F796805F11 /* LJViewKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LJViewKit-prefix.pch"; sourceTree = "<group>"; };
 		4D09C6BD28959D8A9AEEA71F2229BA04 /* Pods-LJViewKit_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-LJViewKit_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		5C4F31330DFA99D699E4BDC8C3573D73 /* libFBSnapshotTestCase.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libFBSnapshotTestCase.a; path = libFBSnapshotTestCase.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		5C4F31330DFA99D699E4BDC8C3573D73 /* libFBSnapshotTestCase.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libFBSnapshotTestCase.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		5D64A5EBC26841BA662C63C70B8B2333 /* Pods-LJViewKit_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-LJViewKit_Example-dummy.m"; sourceTree = "<group>"; };
 		72596FA5726E5CB7382DE4F1D4659BBF /* LJViewKit.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = LJViewKit.xcconfig; sourceTree = "<group>"; };
 		7D10E263DD0E2D7DFDEDB26AF6FE30DA /* FBSnapshotTestCase-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FBSnapshotTestCase-umbrella.h"; sourceTree = "<group>"; };
-		7D31BE22AE4C01BCFFDCAED8888CF492 /* libPods-LJViewKit_Tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-LJViewKit_Tests.a"; path = "libPods-LJViewKit_Tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7D31BE22AE4C01BCFFDCAED8888CF492 /* libPods-LJViewKit_Tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LJViewKit_Tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7D6A03E51832B0301B79E1E136E8BC7F /* UIView+LJView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIView+LJView.h"; path = "LJViewKit/Classes/UIView+LJView.h"; sourceTree = "<group>"; };
 		801441A53595C4296307546E40FB19DF /* FBSnapshotTestCase.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSnapshotTestCase.m; path = FBSnapshotTestCase/FBSnapshotTestCase.m; sourceTree = "<group>"; };
 		8071C340068079503AFC3B6FABA00AEF /* Pods-LJViewKit_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-LJViewKit_Tests.modulemap"; sourceTree = "<group>"; };
@@ -89,9 +93,9 @@
 		92E05E479EC8D38DF4AD79B7C8FD1C0A /* Pods-LJViewKit_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LJViewKit_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		946BF97354D4762FF89FF62BB2493AAB /* FBSnapshotTestController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSnapshotTestController.m; path = FBSnapshotTestCase/FBSnapshotTestController.m; sourceTree = "<group>"; };
 		9D651BB513E036A845A3F8E4BD58AC2A /* Pods-LJViewKit_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LJViewKit_Example.release.xcconfig"; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A15398CB8C2519BBB9469963188FE340 /* Pods-LJViewKit_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LJViewKit_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
-		A245DF34F3503B3B61DD921C0EF318CD /* LJViewKit.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = LJViewKit.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A245DF34F3503B3B61DD921C0EF318CD /* LJViewKit.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = LJViewKit.podspec; sourceTree = "<group>"; tabWidth = 2; };
 		A47F8C13515220EA401C0014A9EF807C /* FBSnapshotTestCase.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FBSnapshotTestCase.xcconfig; sourceTree = "<group>"; };
 		A48988D4F5B92BE432A5E246D59E66D8 /* FBSnapshotTestCase-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FBSnapshotTestCase-prefix.pch"; sourceTree = "<group>"; };
 		A79A17A92B6BB3CD04A0E57CB43F8E4E /* UIImage+Snapshot.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+Snapshot.m"; path = "FBSnapshotTestCase/Categories/UIImage+Snapshot.m"; sourceTree = "<group>"; };
@@ -104,11 +108,11 @@
 		BF231DD85753C39424F0F58A879E8294 /* FBSnapshotTestCase.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSnapshotTestCase.h; path = FBSnapshotTestCase/FBSnapshotTestCase.h; sourceTree = "<group>"; };
 		C69BBB5F7F16D373D86DBDE5AF4590E2 /* UIImage+Snapshot.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+Snapshot.h"; path = "FBSnapshotTestCase/Categories/UIImage+Snapshot.h"; sourceTree = "<group>"; };
 		D24D77D9EBB30FD63D72D5303A60061F /* FBSnapshotTestCasePlatform.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSnapshotTestCasePlatform.m; path = FBSnapshotTestCase/FBSnapshotTestCasePlatform.m; sourceTree = "<group>"; };
-		D4AB83E3298241B154569FB2EDCB1115 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		D4AB83E3298241B154569FB2EDCB1115 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		DC2D8A9DF48102882FED91AEB7A5B7F3 /* LJViewModel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LJViewModel.m; path = LJViewKit/Classes/LJViewModel.m; sourceTree = "<group>"; };
 		DE7C454115BD1E61D4650AA501AF4407 /* Pods-LJViewKit_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LJViewKit_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		DF74AEB8FBA3B574B14913B6A0259E1A /* UIImage+Diff.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+Diff.m"; path = "FBSnapshotTestCase/Categories/UIImage+Diff.m"; sourceTree = "<group>"; };
-		E447332B857B5C81895323FFF344D3AE /* libLJViewKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libLJViewKit.a; path = libLJViewKit.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		E447332B857B5C81895323FFF344D3AE /* libLJViewKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libLJViewKit.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		E68205BA0BE03E12021F3128A765BC2E /* FBSnapshotTestCase-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "FBSnapshotTestCase-dummy.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -198,6 +202,8 @@
 				DC2D8A9DF48102882FED91AEB7A5B7F3 /* LJViewModel.m */,
 				7D6A03E51832B0301B79E1E136E8BC7F /* UIView+LJView.h */,
 				100542F53E60D8039DBF9633FBC8BF6E /* UIView+LJView.m */,
+				248B2007239A20350060130E /* LJViewMethodExchangeUtil.h */,
+				248B2008239A20350060130E /* LJViewMethodExchangeUtil.m */,
 				38CE9F327BBF3F3F1BEDBF95F1DC26BD /* Pod */,
 				C8BA07D1CBFC46C36EADC177A68A9683 /* Support Files */,
 			);
@@ -300,7 +306,6 @@
 				ED0677FF8AE6244FCC6E57691B91080A /* Support Files */,
 				C81A9D7A2662C6529C83A937F7F2020A /* SwiftSupport */,
 			);
-			name = FBSnapshotTestCase;
 			path = FBSnapshotTestCase;
 			sourceTree = "<group>";
 		};
@@ -327,6 +332,7 @@
 				510962FC5FFB2D51E63371C149ADD944 /* LJViewKit.h in Headers */,
 				B7BACEA8201563E86A68C4811D5ABAD3 /* LJViewModel.h in Headers */,
 				BED2EBAE2AB41D2FD29DDF3149D6B900 /* UIView+LJView.h in Headers */,
+				248B2009239A20350060130E /* LJViewMethodExchangeUtil.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -498,6 +504,7 @@
 			files = (
 				6233FB6B01CEC60B6BA06AF32E110EA8 /* LJViewKit-dummy.m in Sources */,
 				B68BA57340FF5838C3E7BE43EDF67BBF /* LJViewKit.m in Sources */,
+				248B200A239A20350060130E /* LJViewMethodExchangeUtil.m in Sources */,
 				3B33584F0918EBE2086D0FADBA56F547 /* LJViewModel.m in Sources */,
 				7E0EC05A624549D302AFF2AC8CBAD41B /* UIView+LJView.m in Sources */,
 			);
@@ -657,8 +664,7 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};
