@@ -39,7 +39,7 @@
     NSArray *array = [NSArray arrayWithArray:view.subviews];
     for (UIView *subView in array) {
         
-        [self viewWillChangeloop:subView AndOldFrame:oldframe AndNewFrame:NewFrame andSuperView:subView];
+        [self viewWillChangeloop:subView AndOldFrame:oldframe AndNewFrame:NewFrame andSuperView:superView];
         
     }
     
@@ -72,7 +72,7 @@
     NSArray *array = [NSArray arrayWithArray:view.subviews];
     for (UIView *subView in array) {
         
-        [self viewDidChangeLoop:subView AndOldFrame:oldframe AndNewFrame:NewFrame andSuperView:subView];
+        [self viewDidChangeLoop:subView AndOldFrame:oldframe AndNewFrame:NewFrame andSuperView:superView];
         
     }
     
