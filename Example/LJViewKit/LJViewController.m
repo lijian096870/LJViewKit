@@ -23,7 +23,16 @@
     
     UITextField *text = [[UITextField alloc]initWithFrame:CGRectMake(100, 100, 200, 200)];
     
+    AddWindowWillAddBlock(text, ^(UIView *view) {
+        NSLog(@"22222%@",view);
+    });
     
+    [self.view addSubview:text];
+    AddWindowWillMoveBlock(text, ^(UIView *view) {
+        NSLog(@"1111%@",view);
+        
+    });
+
    
     
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(5.0 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{

@@ -22,22 +22,22 @@ typedef NS_ENUM(NSInteger, LJViewModelStyle) {
 @property(nonatomic,assign)LJViewModelStyle style;
 
 @property(nonatomic, copy) viewFrameChangeBlock willChangeBlock;
-@property(nonatomic, strong) NSMutableArray     *willChangeArray;
+@property(nonatomic, strong,readonly) NSArray     *_willChangeArray;
 
 @property(nonatomic, copy) viewFrameChangeBlock didChangeBlock;
-@property(nonatomic, strong) NSMutableArray     *didChangeArray;
+@property(nonatomic, strong,readonly) NSArray     *_didChangeArray;
 
 @property(nonatomic, copy) viewWindowChangeBlock    willMoveBlock;
-@property(nonatomic, strong) NSMutableArray         *willMoveArray;
+@property(nonatomic, strong,readonly) NSArray         *_willMoveArray;
 
 @property(nonatomic, copy) viewWindowChangeBlock    didMoveBlock;
-@property(nonatomic, strong) NSMutableArray         *didMoveArray;
+@property(nonatomic, strong,readonly) NSArray         *_didMoveArray;
 
 @property(nonatomic, copy) viewWindowChangeBlock    willAddBlock;
-@property(nonatomic, strong) NSMutableArray         *willAddArray;
+@property(nonatomic, strong,readonly) NSArray         *_willAddArray;
 
 @property(nonatomic, copy) viewWindowChangeBlock    didAddBlock;
-@property(nonatomic, strong) NSMutableArray         *didAddArray;
+@property(nonatomic, strong,readonly) NSArray         *_didAddArray;
 
 - (void)SetFrameWillChangeBlock:(viewFrameChangeBlock)block;
 - (void)AddFrameWillChangeBlock:(viewFrameChangeBlock)block;
@@ -56,6 +56,18 @@ typedef NS_ENUM(NSInteger, LJViewModelStyle) {
 
 - (void)SetWindowDidAddBlock:(viewWindowChangeBlock)block;
 - (void)AddWindowDidAddBlock:(viewWindowChangeBlock)block;
+
+
+- (void)AddWindowDidAddKeyBlock:(viewWindowChangeBlock)block AndKey:(NSString*)key;
+- (void)AddWindowDidMoveKeyBlock:(viewWindowChangeBlock)block AndKey:(NSString*)key;
+- (void)AddWindowWillAddKeyBlock:(viewWindowChangeBlock)block AndKey:(NSString*)key;
+- (void)AddWindowWillMoveKeyBlock:(viewWindowChangeBlock)block AndKey:(NSString*)key;
+- (void)AddFrameDidChangeKeyBlock:(viewFrameChangeBlock)block AndKey:(NSString*)key;
+- (void)AddFrameWillChangeKeyBlock:(viewFrameChangeBlock)block AndKey:(NSString*)key;
+
+
+
+
 
 - (instancetype)initWithView:(UIView *)view AndWindow:(UIWindow *)window;
 

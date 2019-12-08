@@ -27,7 +27,7 @@
                 model.willChangeBlock(self, oldFrame, frame);
             }
             
-            for (viewFrameChangeBlock block in model.willChangeArray) {
+            for (viewFrameChangeBlock block in model._willChangeArray) {
                 block(self, oldFrame, frame);
             }
             
@@ -37,7 +37,7 @@
                 model.didChangeBlock(self, oldFrame, frame);
             }
             
-            for (viewFrameChangeBlock block in model.didChangeArray) {
+            for (viewFrameChangeBlock block in model._didChangeArray) {
                 block(self, oldFrame, frame);
             }
         } else {

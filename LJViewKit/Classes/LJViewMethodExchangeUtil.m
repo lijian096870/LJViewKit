@@ -178,7 +178,7 @@ static BOOL run2 = YES;
                                 model.didAddBlock(self);
                             }
                             
-                            for (viewWindowChangeBlock block in model.didAddArray) {
+                            for (viewWindowChangeBlock block in model._didAddArray) {
                                 if (block) {
                                     block(self);
                                 }
@@ -189,7 +189,7 @@ static BOOL run2 = YES;
                                 model.didMoveBlock(self);
                             }
                             
-                            for (viewWindowChangeBlock block in model.didMoveArray) {
+                            for (viewWindowChangeBlock block in model._didMoveArray) {
                                 if (block) {
                                     block(self);
                                 }
@@ -247,7 +247,7 @@ static BOOL run2 = YES;
                             model.willAddBlock(self);
                         }
                         
-                        for (viewWindowChangeBlock block in model.willAddArray) {
+                        for (viewWindowChangeBlock block in model._willAddArray) {
                             if (block) {
                                 block(self);
                             }
@@ -260,7 +260,7 @@ static BOOL run2 = YES;
                             model.willMoveBlock(self);
                         }
                         
-                        for (viewWindowChangeBlock block in model.willMoveArray) {
+                        for (viewWindowChangeBlock block in model._willMoveArray) {
                             if (block) {
                                 block(self);
                             }

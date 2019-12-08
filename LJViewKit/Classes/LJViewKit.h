@@ -20,26 +20,32 @@ FOUNDATION_EXTERN void viewAddFrameChangeBlock(UIView *view,viewFrameChangeBlock
 
 FOUNDATION_EXTERN void SetFrameWillChangeBlock(UIView *view,viewFrameChangeBlock block);
 FOUNDATION_EXTERN void AddFrameWillChangeBlock(UIView *view,viewFrameChangeBlock block);
+FOUNDATION_EXTERN void AddFrameWillChangeKeyBlock(UIView *view,NSString *key,viewFrameChangeBlock block);
+
 
 FOUNDATION_EXTERN void SetFrameDidChangeBlock(UIView *view,viewFrameChangeBlock block);
 FOUNDATION_EXTERN void AddFrameDidChangeBlock(UIView *view,viewFrameChangeBlock block);
-
+FOUNDATION_EXTERN void AddFrameDidChangeKeyBlock(UIView *view,NSString *key,viewFrameChangeBlock block);
 
 
 
 FOUNDATION_EXTERN void SetWindowWillMoveBlock(UIView *view,viewWindowChangeBlock block);
 FOUNDATION_EXTERN void AddWindowWillMoveBlock(UIView *view,viewWindowChangeBlock block);
-
+FOUNDATION_EXTERN void AddWindowWillMoveKeyBlock(UIView *view,NSString *key,viewWindowChangeBlock block);
 
 FOUNDATION_EXTERN void SetWindowDidMoveBlock(UIView *view,viewWindowChangeBlock block);
 FOUNDATION_EXTERN void AddWindowDidMoveBlock(UIView *view,viewWindowChangeBlock block);
-
+FOUNDATION_EXTERN void AddWindowDidMoveKeyBlock(UIView *view,NSString *key,viewWindowChangeBlock block);
 
 
 
 
 FOUNDATION_EXTERN void SetWindowWillAddBlock(UIView *view,viewWindowChangeBlock block);
 FOUNDATION_EXTERN void AddWindowWillAddBlock(UIView *view,viewWindowChangeBlock block);
+FOUNDATION_EXTERN void AddWindowWillAddKeyBlock(UIView *view,NSString *key,viewWindowChangeBlock block);
 
 FOUNDATION_EXTERN void SetWindowDidAddBlock(UIView *view,viewWindowChangeBlock block);
 FOUNDATION_EXTERN void AddWindowDidAddBlock(UIView *view,viewWindowChangeBlock block);
+FOUNDATION_EXTERN void AddWindowDidAddKeyBlock(UIView *view,NSString *key,viewWindowChangeBlock block);
+
+
