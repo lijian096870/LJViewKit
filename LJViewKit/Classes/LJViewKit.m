@@ -8,23 +8,24 @@
 #import "LJViewKit.h"
 #import "UIView+LJView.h"
 #import "LJViewMethodExchangeUtil.h"
-void viewsetFrameChangeBlock(UIView *view, viewFrameChangeBlock block)
-{
-    if ([view isKindOfClass:UIView.class] && block) {
-        [LJViewMethodExchangeUtil methodFrameChangeBlock_MethodExchang];
-        LJViewModel *model = [view viewFrameChangeMoveWindowChangeModel];
-        [model SetFrameDidChangeBlock:block];
+#import "UIView+LJKVCView.h"
+
+void viewSetFrameChangeBlock(UIView *view,viewFrameChangeBlock block){
+    
+    if([view isKindOfClass:UIView.class]){
+          [view setFrameChangeBlock:block];
     }
+    
+    
+}
+void viewAddFrameChangeBlock(UIView *view,viewFrameChangeBlock block){
+    
+    if([view isKindOfClass:UIView.class]  && block){
+         [view addFrameChangeBlock:block];
+    }
+   
 }
 
-void viewAddFrameChangeBlock(UIView *view, viewFrameChangeBlock block)
-{
-    if ([view isKindOfClass:UIView.class] && block) {
-        [LJViewMethodExchangeUtil methodFrameChangeBlock_MethodExchang];
-        LJViewModel *model = [view viewFrameChangeMoveWindowChangeModel];
-        [model AddFrameDidChangeBlock:block];
-    }
-}
 
 void SetFrameWillChangeBlock(UIView *view, viewFrameChangeBlock block)
 {

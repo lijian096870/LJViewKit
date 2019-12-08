@@ -16,9 +16,17 @@ typedef void(^viewSuperFrameChangeBlock)(UIView *view,UIView *superView,CGRect o
 
 typedef void(^viewAddSubView)(UIView *view,UIView *subView);
 
-FOUNDATION_EXTERN void viewsetFrameChangeBlock(UIView *view,viewFrameChangeBlock block);
+
+//kvc
+FOUNDATION_EXTERN void viewSetFrameChangeBlock(UIView *view,viewFrameChangeBlock block);
 
 FOUNDATION_EXTERN void viewAddFrameChangeBlock(UIView *view,viewFrameChangeBlock block);
+
+
+
+
+
+
 
 
 FOUNDATION_EXTERN void SetFrameWillChangeBlock(UIView *view,viewFrameChangeBlock block);

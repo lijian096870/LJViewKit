@@ -25,10 +25,28 @@ static BOOL run2 = YES;
 
 - (void)LJView_customer_addSubview:(UIView *)view;
 
+- (void)dealloc_content;
+
 @end
 
 @implementation LJViewMethodExchangeUtil
 
++ (void)methodViewDelloc_MethodExchang{
+    
+    static dispatch_once_t onceToken;
+    
+    dispatch_once(&onceToken, ^{
+        SEL sel = sel_registerName("dealloc_content");
+        
+        SEL NewSel = sel_registerName("dealloc");
+        
+        Method originalMethod = class_getInstanceMethod(UIView.class, sel);
+        Method swizzlingMethod = class_getInstanceMethod(UIView.class, NewSel);
+        
+        method_exchangeImplementations(originalMethod, swizzlingMethod);
+    });
+    
+}
 
 + (void)methodAddsubViewBlock_MethodExchang{
     
