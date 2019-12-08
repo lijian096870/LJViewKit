@@ -22,10 +22,10 @@ typedef NS_ENUM(NSInteger, LJViewModelStyle) {
 @property(nonatomic,assign)LJViewModelStyle style;
 
 
-@property(nonatomic, copy) viewFrameChangeBlock superWillChangeBlock;
+@property(nonatomic, copy) viewSuperFrameChangeBlock superWillChangeBlock;
 @property(nonatomic, strong,readonly) NSArray     *_superWillChangeArray;
 
-@property(nonatomic, copy) viewFrameChangeBlock superDidChangeBlock;
+@property(nonatomic, copy) viewSuperFrameChangeBlock superDidChangeBlock;
 @property(nonatomic, strong,readonly) NSArray     *_superDidChangeArray;
 
 @property(nonatomic, copy) viewFrameChangeBlock willChangeBlock;
@@ -74,12 +74,12 @@ typedef NS_ENUM(NSInteger, LJViewModelStyle) {
 
 
 
-- (void)SetSuperViewFrameWillChangeBlock:(viewFrameChangeBlock)block;
-- (void)AddSuperViewFrameWillChangeBlock:(viewFrameChangeBlock)block;
-- (void)AddSuperViewFrameWillChangeKeyBlock:(viewFrameChangeBlock)block AndKey:(NSString*)key;
-- (void)SetSuperViewFrameDidChangeBlock:(viewFrameChangeBlock)block;
-- (void)AddSuperViewFrameDidChangeBlock:(viewFrameChangeBlock)block;
-- (void)AddSuperViewFrameDidChangeKeyBlock:(viewFrameChangeBlock)block AndKey:(NSString*)key;
+- (void)SetSuperViewFrameWillChangeBlock:(viewSuperFrameChangeBlock)block;
+- (void)AddSuperViewFrameWillChangeBlock:(viewSuperFrameChangeBlock)block;
+- (void)AddSuperViewFrameWillChangeKeyBlock:(viewSuperFrameChangeBlock)block AndKey:(NSString*)key;
+- (void)SetSuperViewFrameDidChangeBlock:(viewSuperFrameChangeBlock)block;
+- (void)AddSuperViewFrameDidChangeBlock:(viewSuperFrameChangeBlock)block;
+- (void)AddSuperViewFrameDidChangeKeyBlock:(viewSuperFrameChangeBlock)block AndKey:(NSString*)key;
 
 
 

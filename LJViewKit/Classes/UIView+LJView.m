@@ -9,7 +9,7 @@
 #import "UIView+LJView.h"
 #import "LJViewModel.h"
 #import <objc/runtime.h>
-
+#import "LJViewSuperViewFrameChangeRuner.h"
 @implementation UIView (LJView)
 
 
@@ -30,7 +30,7 @@
             for (viewFrameChangeBlock block in model._willChangeArray) {
                 block(self, oldFrame, frame);
             }
-            
+            [LJViewSuperViewFrameChangeRuner viewWillChange:self AndOldFrame:oldFrame AndNewFrame:frame];
             [self LJView_customer_setFrame:frame];
             
             if (model.didChangeBlock) {
@@ -40,8 +40,14 @@
             for (viewFrameChangeBlock block in model._didChangeArray) {
                 block(self, oldFrame, frame);
             }
+            [LJViewSuperViewFrameChangeRuner viewDidChange:self AndOldFrame:oldFrame AndNewFrame:frame];
         } else {
+            
+            [LJViewSuperViewFrameChangeRuner viewWillChange:self AndOldFrame:oldFrame AndNewFrame:frame];
+            
             [self LJView_customer_setFrame:frame];
+            
+            [LJViewSuperViewFrameChangeRuner viewDidChange:self AndOldFrame:oldFrame AndNewFrame:frame];
         }
     }
 }

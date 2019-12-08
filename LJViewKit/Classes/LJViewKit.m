@@ -201,7 +201,7 @@ void AddFrameWillChangeKeyBlock(UIView *view,NSString *key,viewFrameChangeBlock 
 }
 
 
- void SetSuperViewFrameWillChangeBlock(UIView *view,viewFrameChangeBlock block){
+ void SetSuperViewFrameWillChangeBlock(UIView *view,viewSuperFrameChangeBlock block){
     
      if ([view isKindOfClass:UIView.class] && block) {
          [LJViewMethodExchangeUtil methodFrameChangeBlock_MethodExchang];
@@ -211,7 +211,7 @@ void AddFrameWillChangeKeyBlock(UIView *view,NSString *key,viewFrameChangeBlock 
      }
     
 }
- void AddSuperViewFrameWillChangeBlock(UIView *view,viewFrameChangeBlock block){
+ void AddSuperViewFrameWillChangeBlock(UIView *view,viewSuperFrameChangeBlock block){
     
      if ([view isKindOfClass:UIView.class] && block) {
          [LJViewMethodExchangeUtil methodFrameChangeBlock_MethodExchang];
@@ -221,7 +221,7 @@ void AddFrameWillChangeKeyBlock(UIView *view,NSString *key,viewFrameChangeBlock 
      }
     
 }
- void AddSuperViewFrameWillChangeKeyBlock(UIView *view,NSString *key,viewFrameChangeBlock block){
+ void AddSuperViewFrameWillChangeKeyBlock(UIView *view,NSString *key,viewSuperFrameChangeBlock block){
     
      if ([view isKindOfClass:UIView.class] && block) {
          [LJViewMethodExchangeUtil methodFrameChangeBlock_MethodExchang];
@@ -233,7 +233,7 @@ void AddFrameWillChangeKeyBlock(UIView *view,NSString *key,viewFrameChangeBlock 
 }
 
 
- void SetSuperViewFrameDidChangeBlock(UIView *view,viewFrameChangeBlock block){
+ void SetSuperViewFrameDidChangeBlock(UIView *view,viewSuperFrameChangeBlock block){
     
      if ([view isKindOfClass:UIView.class] && block) {
          [LJViewMethodExchangeUtil methodFrameChangeBlock_MethodExchang];
@@ -244,7 +244,7 @@ void AddFrameWillChangeKeyBlock(UIView *view,NSString *key,viewFrameChangeBlock 
     
     
 }
- void AddSuperViewFrameDidChangeBlock(UIView *view,viewFrameChangeBlock block){
+ void AddSuperViewFrameDidChangeBlock(UIView *view,viewSuperFrameChangeBlock block){
     
      
      if ([view isKindOfClass:UIView.class] && block) {
@@ -255,7 +255,7 @@ void AddFrameWillChangeKeyBlock(UIView *view,NSString *key,viewFrameChangeBlock 
      }
     
 }
- void AddSuperViewFrameDidChangeKeyBlock(UIView *view,NSString *key,viewFrameChangeBlock block){
+ void AddSuperViewFrameDidChangeKeyBlock(UIView *view,NSString *key,viewSuperFrameChangeBlock block){
     
      if ([view isKindOfClass:UIView.class] && block) {
          [LJViewMethodExchangeUtil methodFrameChangeBlock_MethodExchang];

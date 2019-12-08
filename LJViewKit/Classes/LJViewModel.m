@@ -40,19 +40,19 @@
 @implementation LJViewModel
 
 
-- (void)SetSuperViewFrameWillChangeBlock:(viewFrameChangeBlock)block{
+- (void)SetSuperViewFrameWillChangeBlock:(viewSuperFrameChangeBlock)block{
     if(block){
         self.superWillChangeBlock = block;
     }
     
 }
-- (void)AddSuperViewFrameWillChangeBlock:(viewFrameChangeBlock)block{
+- (void)AddSuperViewFrameWillChangeBlock:(viewSuperFrameChangeBlock)block{
     if(block){
         [self.superWillChangeArray addObject:block];
     }
     
 }
-- (void)AddSuperViewFrameWillChangeKeyBlock:(viewFrameChangeBlock)block AndKey:(NSString*)key{
+- (void)AddSuperViewFrameWillChangeKeyBlock:(viewSuperFrameChangeBlock)block AndKey:(NSString*)key{
     
     if([key isKindOfClass:NSString.class]&&key.length>0){
         if(block){
@@ -66,19 +66,19 @@
     }
     
 }
-- (void)SetSuperViewFrameDidChangeBlock:(viewFrameChangeBlock)block{
+- (void)SetSuperViewFrameDidChangeBlock:(viewSuperFrameChangeBlock)block{
     
     self.superDidChangeBlock = block;
     
 }
-- (void)AddSuperViewFrameDidChangeBlock:(viewFrameChangeBlock)block{
+- (void)AddSuperViewFrameDidChangeBlock:(viewSuperFrameChangeBlock)block{
     if(block){
         
         [self.superDidChangeArray addObject:block];
     }
     
 }
-- (void)AddSuperViewFrameDidChangeKeyBlock:(viewFrameChangeBlock)block AndKey:(NSString*)key{
+- (void)AddSuperViewFrameDidChangeKeyBlock:(viewSuperFrameChangeBlock)block AndKey:(NSString*)key{
     
     if([key isKindOfClass:NSString.class]&&key.length>0){
         if(block){
