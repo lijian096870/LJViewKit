@@ -12,7 +12,14 @@
 #import "LJViewSuperViewFrameChangeRuner.h"
 @implementation UIView (LJView)
 
-
+-(void)LJView_customer_addSubview:(UIView *)view{
+    
+    [self LJView_customer_addSubview:view];
+    if([view isKindOfClass:UIView.class]){
+        [LJViewSuperViewFrameChangeRuner addSubView:view AndBeAddView:self];
+    }
+    
+}
 
 - (void)LJView_customer_setFrame:(CGRect)frame {
     CGRect oldFrame = self.frame;

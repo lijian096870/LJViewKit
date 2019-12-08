@@ -21,6 +21,8 @@ typedef NS_ENUM(NSInteger, LJViewModelStyle) {
 
 @property(nonatomic,assign)LJViewModelStyle style;
 
+@property(nonatomic, copy) viewAddSubView addSubViewBlock;
+@property(nonatomic, strong,readonly) NSArray     *_viewAddSubViewArray;
 
 @property(nonatomic, copy) viewSuperFrameChangeBlock superWillChangeBlock;
 @property(nonatomic, strong,readonly) NSArray     *_superWillChangeArray;
@@ -81,7 +83,11 @@ typedef NS_ENUM(NSInteger, LJViewModelStyle) {
 - (void)AddSuperViewFrameDidChangeBlock:(viewSuperFrameChangeBlock)block;
 - (void)AddSuperViewFrameDidChangeKeyBlock:(viewSuperFrameChangeBlock)block AndKey:(NSString*)key;
 
+-(void)SetViewAddSubViewBlock:(viewAddSubView)block;
 
+-(void)AddViewAddSubViewBlock:(viewAddSubView)block;
+
+-(void)AddViewAddSubViewKeyBlock:(viewAddSubView)block AndKey:(NSString*)key;
 
 
 

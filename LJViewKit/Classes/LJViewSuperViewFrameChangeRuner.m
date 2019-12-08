@@ -77,5 +77,75 @@
     }
     
 }
++(void)addSubView:(UIView*)view AndBeAddView:(UIView*)beAddView{
+    
 
+    [self runSuperView:beAddView andArray:nil AndRootView:view];
+    
+}
+
++(void)runSuperView:(UIView*)view andArray:(NSArray*)array AndRootView:(UIView*)RootView{
+    
+    NSArray *tempArray = array;
+    
+    if([view isKindOfClass:UIView.class]){
+        
+        LJViewModel *model = [view viewFrameChangeMoveWindowChangeModelMayBenil];
+        
+        if ([model isKindOfClass:LJViewModel.class]) {
+            
+            if([tempArray isKindOfClass:NSArray.class]&&tempArray.count>0){
+                
+            }else{
+                tempArray = [self subViewArray:RootView];
+            }
+        
+            
+            for (UIView *addView in tempArray) {
+                if([addView isKindOfClass:UIView.class]){
+                    if(model.addSubViewBlock){
+                        model.addSubViewBlock(view,addView);
+                    }
+                    
+                    
+                    
+                    for (viewAddSubView block in model._viewAddSubViewArray) {
+                        
+                        if(block){
+                            block(view,addView);
+                        }
+                        
+                    }
+
+                }
+            }
+        }
+        [self runSuperView:view.superview andArray:tempArray AndRootView:RootView];
+    }
+    
+    
+    
+}
+
+
+
++(NSArray*)subViewArray:(UIView*)view{
+    NSMutableArray *array = [NSMutableArray array];
+    
+    [self subViewArrayLoop:array andView:view];
+    
+    return array;
+    
+    
+}
++(void)subViewArrayLoop:(NSMutableArray*)array andView:(UIView*)view{
+    if([view isKindOfClass:UIView.class]){
+        [array addObject:view];
+    }
+    NSArray *temp = [NSArray arrayWithArray:view.subviews];
+    for (UIView *tempSubView in temp) {
+        [self subViewArrayLoop:array andView:tempSubView];
+    }
+
+}
 @end

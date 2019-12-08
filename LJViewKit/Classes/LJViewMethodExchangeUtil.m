@@ -23,9 +23,29 @@ static BOOL run2 = YES;
 
 - (void)custmoer_methodMoveChangeBlock_didMoveToWindow;
 
+- (void)LJView_customer_addSubview:(UIView *)view;
+
 @end
 
 @implementation LJViewMethodExchangeUtil
+
+
++ (void)methodAddsubViewBlock_MethodExchang{
+    
+    static dispatch_once_t onceToken;
+    
+    dispatch_once(&onceToken, ^{
+        SEL sel = sel_registerName("addSubview:");
+        
+        SEL NewSel = sel_registerName("LJView_customer_addSubview:");
+        
+        Method originalMethod = class_getInstanceMethod(UIView.class, sel);
+        Method swizzlingMethod = class_getInstanceMethod(UIView.class, NewSel);
+        
+        method_exchangeImplementations(originalMethod, swizzlingMethod);
+    });
+    
+}
 
 + (void)methodFrameChangeBlock_MethodExchang {
     static dispatch_once_t onceToken;

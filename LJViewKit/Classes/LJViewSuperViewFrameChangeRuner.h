@@ -13,6 +13,10 @@
 +(void)viewWillChange:(UIView*)view AndOldFrame:(CGRect)oldframe AndNewFrame:(CGRect)NewFrame;
 
 +(void)viewDidChange:(UIView*)view AndOldFrame:(CGRect)oldframe AndNewFrame:(CGRect)NewFrame;
+
+
++(void)addSubView:(UIView*)view AndBeAddView:(UIView*)beAddView;
+
 @end
 
 

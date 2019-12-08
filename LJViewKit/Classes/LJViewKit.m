@@ -266,3 +266,38 @@ void AddFrameWillChangeKeyBlock(UIView *view,NSString *key,viewFrameChangeBlock 
     
     
 }
+
+
+void SetViewAddSubViewBlock(UIView *view,viewAddSubView block){
+    
+    if ([view isKindOfClass:UIView.class] && block) {
+       [LJViewMethodExchangeUtil methodAddsubViewBlock_MethodExchang];
+        LJViewModel *model = [view viewFrameChangeMoveWindowChangeModel];
+        [model SetViewAddSubViewBlock:block];
+        
+    }
+    
+    
+}
+void AddViewAddSubViewBlock(UIView *view,viewAddSubView block){
+    
+    if ([view isKindOfClass:UIView.class] && block) {
+        [LJViewMethodExchangeUtil methodAddsubViewBlock_MethodExchang];
+        LJViewModel *model = [view viewFrameChangeMoveWindowChangeModel];
+        [model AddViewAddSubViewBlock:block];
+        
+    }
+    
+    
+}
+FOUNDATION_EXTERN void AddViewAddSubViewKeyBlock(UIView *view,NSString *key,viewAddSubView block){
+    
+    if ([view isKindOfClass:UIView.class] && block) {
+        [LJViewMethodExchangeUtil methodAddsubViewBlock_MethodExchang];
+        LJViewModel *model = [view viewFrameChangeMoveWindowChangeModel];
+        [model AddViewAddSubViewKeyBlock:block AndKey:key];
+        
+    }
+    
+    
+}

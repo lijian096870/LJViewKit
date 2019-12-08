@@ -21,6 +21,12 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     
+    AddViewAddSubViewBlock(self.view, ^(UIView *view, UIView *subView) {
+       
+        NSLog(@"subView:%@",subView);
+        
+    });
+    
     UITextField *text = [[UITextField alloc]initWithFrame:CGRectMake(100, 100, 200, 200)];
     
     AddWindowWillAddBlock(text, ^(UIView *view) {
