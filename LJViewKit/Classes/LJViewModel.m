@@ -20,6 +20,10 @@
 @property(nonatomic,strong)NSMutableDictionary *didMoveDictionary;
 
 
+@property(nonatomic,strong)NSMutableDictionary *superWillChangeDictionary;
+@property(nonatomic,strong)NSMutableDictionary *superDidChangeDictionary;
+
+
 @property(nonatomic, strong) NSMutableArray     *willChangeArray;
 @property(nonatomic, strong) NSMutableArray     *didChangeArray;
 @property(nonatomic, strong) NSMutableArray     *willMoveArray;
@@ -27,11 +31,97 @@
 @property(nonatomic, strong) NSMutableArray     *willAddArray;
 @property(nonatomic, strong) NSMutableArray     *didAddArray;
 
+
+@property(nonatomic, strong) NSMutableArray     *superWillChangeArray;
+@property(nonatomic, strong) NSMutableArray     *superDidChangeArray;
+
 @end
 
 @implementation LJViewModel
 
 
+- (void)SetSuperViewFrameWillChangeBlock:(viewFrameChangeBlock)block{
+    if(block){
+        self.superWillChangeBlock = block;
+    }
+    
+}
+- (void)AddSuperViewFrameWillChangeBlock:(viewFrameChangeBlock)block{
+    if(block){
+        [self.superWillChangeArray addObject:block];
+    }
+    
+}
+- (void)AddSuperViewFrameWillChangeKeyBlock:(viewFrameChangeBlock)block AndKey:(NSString*)key{
+    
+    if([key isKindOfClass:NSString.class]&&key.length>0){
+        if(block){
+            
+            [self.superWillChangeDictionary setObject:block forKey:key];
+            
+        }
+        
+    }else{
+        [self AddSuperViewFrameWillChangeBlock:block];
+    }
+    
+}
+- (void)SetSuperViewFrameDidChangeBlock:(viewFrameChangeBlock)block{
+    
+    self.superDidChangeBlock = block;
+    
+}
+- (void)AddSuperViewFrameDidChangeBlock:(viewFrameChangeBlock)block{
+    if(block){
+        
+        [self.superDidChangeArray addObject:block];
+    }
+    
+}
+- (void)AddSuperViewFrameDidChangeKeyBlock:(viewFrameChangeBlock)block AndKey:(NSString*)key{
+    
+    if([key isKindOfClass:NSString.class]&&key.length>0){
+        if(block){
+            
+            [self.superDidChangeDictionary setObject:block forKey:key];
+            
+        }
+        
+    }else{
+        [self AddSuperViewFrameDidChangeBlock:block];
+    }
+    
+}
+
+
+
+-(NSArray*)_superWillChangeArray{
+    
+    NSMutableArray *array = [NSMutableArray arrayWithArray:self.superWillChangeArray];
+    
+    if(self.willChangeDictionary.count>0){
+        
+        [array addObjectsFromArray:self.superWillChangeDictionary.allValues];
+        
+    }
+    return array;
+    
+    
+}
+
+-(NSArray*)_superDidChangeArray{
+    
+    NSMutableArray *array = [NSMutableArray arrayWithArray:self.superDidChangeArray];
+    
+    if(self.willChangeDictionary.count>0){
+        
+        [array addObjectsFromArray:self.superDidChangeDictionary.allValues];
+        
+    }
+    return array;
+    
+    
+}
 -(NSArray*)_willChangeArray{
     
     NSMutableArray *array = [NSMutableArray arrayWithArray:self.willChangeArray];
@@ -374,6 +464,44 @@
         _didMoveDictionary = [NSMutableDictionary dictionary];
     }
     return _didMoveDictionary;
+    
+}
+-(NSMutableDictionary*)superDidChangeDictionary{
+    
+    if(_superDidChangeDictionary==nil){
+        _superDidChangeDictionary = [NSMutableDictionary dictionary];
+    }
+    return _superDidChangeDictionary;
+    
+    
+}
+
+-(NSMutableDictionary*)superWillChangeDictionary{
+    
+    if(_superWillChangeDictionary==nil){
+        _superWillChangeDictionary = [NSMutableDictionary dictionary];
+    }
+    return _superWillChangeDictionary;
+    
+}
+
+
+-(NSMutableArray*)superDidChangeArray{
+    
+    if(_superDidChangeArray==nil){
+        _superDidChangeArray = [NSMutableArray array];
+    }
+    return _superDidChangeArray;
+    
+}
+
+-(NSMutableArray*)superWillChangeArray{
+    
+    if(_superWillChangeArray==nil){
+        _superWillChangeArray = [NSMutableArray array];
+    }
+    return _superWillChangeArray;
+    
     
 }
 

@@ -49,3 +49,11 @@ FOUNDATION_EXTERN void AddWindowDidAddBlock(UIView *view,viewWindowChangeBlock b
 FOUNDATION_EXTERN void AddWindowDidAddKeyBlock(UIView *view,NSString *key,viewWindowChangeBlock block);
 
 
+FOUNDATION_EXTERN void SetSuperViewFrameWillChangeBlock(UIView *view,viewFrameChangeBlock block);
+FOUNDATION_EXTERN void AddSuperViewFrameWillChangeBlock(UIView *view,viewFrameChangeBlock block);
+FOUNDATION_EXTERN void AddSuperViewFrameWillChangeKeyBlock(UIView *view,NSString *key,viewFrameChangeBlock block);
+
+
+FOUNDATION_EXTERN void SetSuperViewFrameDidChangeBlock(UIView *view,viewFrameChangeBlock block);
+FOUNDATION_EXTERN void AddSuperViewFrameDidChangeBlock(UIView *view,viewFrameChangeBlock block);
+FOUNDATION_EXTERN void AddSuperViewFrameDidChangeKeyBlock(UIView *view,NSString *key,viewFrameChangeBlock block);
