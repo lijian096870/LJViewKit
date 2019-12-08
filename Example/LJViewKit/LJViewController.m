@@ -24,15 +24,7 @@
     UITextField *text = [[UITextField alloc]initWithFrame:CGRectMake(100, 100, 200, 200)];
     
     
-    AddWindowWillAddBlock(text, ^(UIView *view, UIWindow *window) {
-        NSLog(@"22222%@",window);
-    });
-    
-    [self.view addSubview:text];
-    AddWindowWillMoveBlock(text, ^(UIView *view, UIWindow *window) {
-        NSLog(@"1111%@",window);
-        
-    });
+   
     
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(5.0 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
         [text removeFromSuperview];
