@@ -8,6 +8,7 @@
 
 #import "LJViewController.h"
 #import "LJViewKit.h"
+#import "LJTextField.h"
 @interface LJViewController ()
 
 @end
@@ -27,7 +28,7 @@
         
     });
     
-    UITextField *text = [[UITextField alloc]initWithFrame:CGRectMake(100, 100, 200, 200)];
+    UITextField *text = [[LJTextField alloc]initWithFrame:CGRectMake(100, 100, 200, 200)];
     
     AddWindowWillAddBlock(text, ^(UIView *view) {
         NSLog(@"22222%@",view);
