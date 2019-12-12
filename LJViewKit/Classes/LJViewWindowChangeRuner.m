@@ -12,10 +12,8 @@
 + (void)willAddView:(UIView *)superView andSubView:(UIView *)subView {
     UIWindow *window = [self getRootWindow:superView];
 
-    @autoreleasepool {
-        if ([window isKindOfClass:UIWindow.class]) {
-            [self LoopWillAddWindowView:subView];
-        }
+    if ([window isKindOfClass:UIWindow.class]) {
+        [self LoopWillAddWindowView:subView];
     }
 }
 
@@ -46,10 +44,8 @@
 + (void)didAddView:(UIView *)superView andSubView:(UIView *)subView {
     UIWindow *window = [self getRootWindow:superView];
 
-    @autoreleasepool {
-        if ([window isKindOfClass:UIWindow.class]) {
-            [self LoopDidAddWindowView:subView];
-        }
+    if ([window isKindOfClass:UIWindow.class]) {
+        [self LoopDidAddWindowView:subView];
     }
 }
 
@@ -80,10 +76,8 @@
 + (void)willMoveView:(UIView *)superView andSubView:(UIView *)subView {
     UIWindow *window = [self getRootWindow:superView];
 
-    @autoreleasepool {
-        if ([window isKindOfClass:UIWindow.class]) {
-            [self LoopWillMoveWindowView:subView];
-        }
+    if ([window isKindOfClass:UIWindow.class]) {
+        [self LoopWillMoveWindowView:subView];
     }
 }
 
@@ -114,10 +108,8 @@
 + (void)didMoveView:(UIView *)superView andSubView:(UIView *)subView {
     UIWindow *window = [self getRootWindow:superView];
 
-    @autoreleasepool {
-        if ([window isKindOfClass:UIWindow.class]) {
-            [self LoopDidMoveWindowView:subView];
-        }
+    if ([window isKindOfClass:UIWindow.class]) {
+        [self LoopDidMoveWindowView:subView];
     }
 }
 
