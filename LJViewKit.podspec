@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'LJViewKit'
-  s.version          = '2.2.2'
+  s.version          = '2.2.3'
   s.summary          = 'View大小变化监听'
 
 # This description is used to generate tags and improve search results.
