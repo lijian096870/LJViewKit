@@ -17,47 +17,39 @@
 
 - (void)viewDidLoad
 {
-    
-    
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
-    
+
     AddViewAddSubViewBlock(self.view, ^(UIView *view, UIView *subView) {
-       
-        NSLog(@"subView:%@",subView);
-        
-    });
-    
-    UITextField *text = [[LJTextField alloc]initWithFrame:CGRectMake(100, 100, 200, 200)];
-    
-    AddWindowWillAddBlock(text, ^(UIView *view) {
-        NSLog(@"22222%@",view);
-    });
-    
-    [self.view addSubview:text];
-    AddWindowWillMoveBlock(text, ^(UIView *view) {
-        NSLog(@"1111%@",view);
-        
+        NSLog(@"subView:%@", subView);
     });
 
-   
-    
+    UITextField *text = [[LJTextField alloc]initWithFrame:CGRectMake(100, 100, 200, 200)];
+
+    AddWindowWillAddBlock(text, ^(UIView *view) {
+        NSLog(@"11111%@", view);
+    });
+
+    AddWindowDidAddBlock(text, ^(UIView *view) {
+        NSLog(@"222222%@", view);
+    });
+
+    AddWindowWillMoveBlock(text, ^(UIView *view) {
+        NSLog(@"33333%@", view);
+    });
+    AddWindowDidMoveBlock(text, ^(UIView *view) {
+        NSLog(@"444444%@", view);
+    });
+
+    [self.view addSubview:text];
+
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(5.0 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
         [text removeFromSuperview];
         dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(5.0 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-            
             [self.view addSubview:text];
         });
-        
     });
-    
-    
-    
-    
 }
-
-
-
 
 - (void)didReceiveMemoryWarning
 {
