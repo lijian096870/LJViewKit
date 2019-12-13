@@ -168,7 +168,7 @@
 
 @implementation UIView (LJKVCView)
 
-- (void)addFrameChangeBlock:(viewFrameChangeBlock)block {
+- (void)addFrameChangeBlock_kvcView:(viewFrameChangeBlock)block {
     if (block) {
         @weakify(self);
         [[self viewModel_content] addBlock:^(UIView *view, CGRect oldFrame, CGRect newFrame) {
@@ -183,7 +183,7 @@
     [self addLister_block];
 }
 
-- (void)setFrameChangeBlock:(viewFrameChangeBlock)block {
+- (void)setFrameChangeBlock_kvcView:(viewFrameChangeBlock)block {
     @weakify(self);
     [[self viewModel_content] setBlock:^(UIView *view, CGRect oldFrame, CGRect newFrame) {
         @strongifyAndReturnIfNil(self);
