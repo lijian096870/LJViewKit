@@ -38,6 +38,8 @@
 
 @interface LJKVCViewModel : NSObject
 
+@property(nonatomic, assign, readwrite) BOOL callbackOn;
+
 @property(nonatomic, copy) viewFrameChangeBlock block;
 
 @property(nonatomic, strong) NSMutableArray <LJViewModel_blockModel *> *blockArray;
@@ -72,6 +74,7 @@
     self = [super init];
 
     if (self) {
+        self.callbackOn = YES;
         self.isAddLister = NO;
     }
 
@@ -139,7 +142,7 @@
 - (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary *)change context:(void *)context
 {
     @synchronized (self) {
-        if ([keyPath isEqualToString:@"frame"]) {
+        if ([keyPath isEqualToString:@"frame"] && self.callbackOn) {
             CGRect  oldRect = [[self class] getFrame:[NSString stringWithFormat:@"%@", [change objectForKey:@"old"]]];
             CGRect  newRect = [[self class] getFrame:[NSString stringWithFormat:@"%@", [change objectForKey:@"new"]]];
 
@@ -167,6 +170,26 @@
 @end
 
 @implementation UIView (LJKVCView)
+
+- (void)setFrame:(CGRect)frame and_kvcView:(BOOL)callback {
+    if (callback) {
+        if ([self viewModel_content].callbackOn) {
+            [self setFrame:frame];
+        } else {
+            [[self viewModel_content] setCallbackOn:YES];
+            [self setFrame:frame];
+            [[self viewModel_content] setCallbackOn:NO];
+        }
+    } else {
+        if ([self viewModel_content].callbackOn) {
+            [[self viewModel_content] setCallbackOn:NO];
+            [self setFrame:frame];
+            [[self viewModel_content] setCallbackOn:YES];
+        } else {
+            [self setFrame:frame];
+        }
+    }
+}
 
 - (void)addFrameChangeBlock_kvcView:(viewFrameChangeBlock)block {
     if (block) {
