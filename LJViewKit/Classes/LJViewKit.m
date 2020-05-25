@@ -27,7 +27,7 @@ void viewAddFrameChangeBlock(UIView *view, viewFrameChangeBlock block)
 void objectAddObjectDeallocBlock(NSObject *object, objectDeallocBlock block)
 {
     if ([object isKindOfClass:NSObject.class] && block) {
-        [NSObject registerCustomerDeallocArrayObject:object block:block];
+        [NSObject registerCustomerDeallocArrayObject:object block:block Key:@"LJViewKit"];
     }
 }
 

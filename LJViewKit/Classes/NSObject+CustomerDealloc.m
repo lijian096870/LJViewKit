@@ -10,20 +10,42 @@
 
 @implementation NSObject (CustomerDealloc)
 
-+ (void)registerCustomerDeallocArrayObject:(NSObject *)object block:(customerDeallocBlock)block {
-    if ([object isKindOfClass:NSObject.class] && block) {
++ (void)registerCustomerDeallocArrayObject:(NSObject *)object block:(customerDeallocBlock)block Key:(NSString *)key {
+    if ([object isKindOfClass:NSObject.class] && block && (key.length > 0)) {
         [self methodCustomerDealloc_MethodExchang];
-        NSMutableArray *array = [object LJCustomerDeallocClass_blockArray];
+        NSMutableDictionary *dictionary = [object LJCustomerDeallocClass_blockOption];
+
+        for (NSString *tempKey in dictionary) {
+            if ([key isEqualToString:tempKey]) {
+                NSMutableArray *array = [dictionary objectForKey:tempKey];
+                [array addObject:block];
+                return;
+            }
+        }
+
+        NSMutableArray *array = [NSMutableArray array];
         [array addObject:block];
+        [dictionary setObject:array forKey:key];
     }
 }
 
-+ (void)registerCustomerDeallocOnceObject:(NSObject *)object block:(customerDeallocBlock)block {
-    if ([object isKindOfClass:NSObject.class] && block) {
++ (void)registerCustomerDeallocOnceObject:(NSObject *)object block:(customerDeallocBlock)block Key:(NSString *)key {
+    if ([object isKindOfClass:NSObject.class] && block && (key.length > 0)) {
         [self methodCustomerDealloc_MethodExchang];
-        NSMutableArray *array = [object LJCustomerDeallocClass_blockOnce];
-        [array removeAllObjects];
+        NSMutableDictionary *dictionary = [object LJCustomerDeallocClass_blockOnce];
+
+        for (NSString *tempKey in dictionary) {
+            if ([key isEqualToString:tempKey]) {
+                NSMutableArray *array = [dictionary objectForKey:tempKey];
+                [array removeAllObjects];
+                [array addObject:block];
+                return;
+            }
+        }
+
+        NSMutableArray *array = [NSMutableArray array];
         [array addObject:block];
+        [dictionary setObject:array forKey:key];
     }
 }
 
@@ -43,65 +65,74 @@
     });
 }
 
-- (NSMutableArray *)LJCustomerDeallocClass_blockArray_OptionOnce {
-    return objc_getAssociatedObject(self, @selector(LJCustomerDeallocClass_blockArray_OptionOnce));
+- (NSMutableDictionary *)LJCustomerDeallocClass_blockDictionary_OptionOnce {
+    return objc_getAssociatedObject(self, @selector(LJCustomerDeallocClass_blockDictionary_OptionOnce));
 }
 
-- (NSMutableArray *)LJCustomerDeallocClass_blockOnce;
+- (NSMutableDictionary *)LJCustomerDeallocClass_blockOnce;
 {
-    NSMutableArray *obj = [self LJCustomerDeallocClass_blockArray_OptionOnce];
+    NSMutableDictionary *obj = [self LJCustomerDeallocClass_blockDictionary_OptionOnce];
 
-    if ([obj isKindOfClass:[NSMutableArray class]]) {
+    if ([obj isKindOfClass:[NSMutableDictionary class]]) {
         return obj;
     } else {
-        NSMutableArray *array = [NSMutableArray array];
-        objc_setAssociatedObject(self, @selector(LJCustomerDeallocClass_blockArray_OptionOnce), array, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
-        return array;
+        NSMutableDictionary *dictionary = [NSMutableDictionary dictionary];
+        objc_setAssociatedObject(self, @selector(LJCustomerDeallocClass_blockDictionary_OptionOnce), dictionary, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+        return dictionary;
     }
 }
 
-- (NSMutableArray *)LJCustomerDeallocClass_blockArray_OptionArray {
-    return objc_getAssociatedObject(self, @selector(LJCustomerDeallocClass_blockArray_OptionArray));
+- (NSMutableDictionary *)LJCustomerDeallocClass_blockDictionary_OptionDictionary {
+    return objc_getAssociatedObject(self, @selector(LJCustomerDeallocClass_blockDictionary_OptionDictionary));
 }
 
-- (NSMutableArray *)LJCustomerDeallocClass_blockArray;
+- (NSMutableDictionary *)LJCustomerDeallocClass_blockOption;
 {
-    NSMutableArray *obj = [self LJCustomerDeallocClass_blockArray_OptionArray];
+    NSMutableDictionary *obj = [self LJCustomerDeallocClass_blockDictionary_OptionDictionary];
 
-    if ([obj isKindOfClass:[NSMutableArray class]]) {
+    if ([obj isKindOfClass:[NSMutableDictionary class]]) {
         return obj;
     } else {
-        NSMutableArray *array = [NSMutableArray array];
-        objc_setAssociatedObject(self, @selector(LJCustomerDeallocClass_blockArray_OptionArray), array, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
-        return array;
+        NSMutableDictionary *dictionary = [NSMutableDictionary dictionary];
+        objc_setAssociatedObject(self, @selector(LJCustomerDeallocClass_blockDictionary_OptionDictionary), dictionary, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+        return dictionary;
     }
 }
 
 - (void)dealloc_customerDealloc_LJView {
     {
-        NSMutableArray *array = [self LJCustomerDeallocClass_blockArray_OptionArray];
+        NSMutableDictionary *dictionary = [self LJCustomerDeallocClass_blockDictionary_OptionDictionary];
 
-        if (array) {
-            for (customerDeallocBlock blcok in array) {
-                if (blcok) {
-                    blcok(self);
+        if (dictionary) {
+            for (NSString *key in dictionary.allKeys) {
+                NSArray *array = [dictionary objectForKey:key];
+
+                for (customerDeallocBlock blcok in array) {
+                    if (blcok) {
+                        blcok(self);
+                    }
                 }
             }
 
-            [array removeAllObjects];
+            [dictionary removeAllObjects];
         }
     }
-    {
-        NSMutableArray *array = [self LJCustomerDeallocClass_blockArray_OptionOnce];
 
-        if (array) {
-            for (customerDeallocBlock blcok in array) {
-                if (blcok) {
-                    blcok(self);
+    {
+        NSMutableDictionary *dictionary = [self LJCustomerDeallocClass_blockDictionary_OptionOnce];
+
+        if (dictionary) {
+            for (NSString *key in dictionary.allKeys) {
+                NSArray *array = [dictionary objectForKey:key];
+
+                for (customerDeallocBlock blcok in array) {
+                    if (blcok) {
+                        blcok(self);
+                    }
                 }
             }
 
-            [array removeAllObjects];
+            [dictionary removeAllObjects];
         }
     }
 

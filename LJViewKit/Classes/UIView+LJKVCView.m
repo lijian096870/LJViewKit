@@ -231,7 +231,7 @@
             UIView *view = (UIView *)object;
             [view dealloc_content_removeLister];
         }
-    }];
+    } Key:@"LJViewKit"];
 }
 
 - (LJKVCViewModel *)viewModel_content

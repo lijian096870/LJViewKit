@@ -11,9 +11,9 @@ typedef void(^customerDeallocBlock)(NSObject *object);
 
 @interface NSObject (CustomerDealloc)
 
-+(void)registerCustomerDeallocArrayObject:(NSObject *)object block:(customerDeallocBlock)block;
++(void)registerCustomerDeallocArrayObject:(NSObject *)object block:(customerDeallocBlock)block Key:(NSString *)key;
 
-+(void)registerCustomerDeallocOnceObject:(NSObject *)object block:(customerDeallocBlock)block;
++(void)registerCustomerDeallocOnceObject:(NSObject *)object block:(customerDeallocBlock)block Key:(NSString *)key;
 
 @end
 
