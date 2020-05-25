@@ -79,7 +79,7 @@
 
 - (void)dealloc_customerDealloc_LJView {
     {
-        NSArray *array = [self LJCustomerDeallocClass_blockArray_OptionArray];
+        NSMutableArray *array = [self LJCustomerDeallocClass_blockArray_OptionArray];
 
         if (array) {
             for (customerDeallocBlock blcok in array) {
@@ -87,10 +87,12 @@
                     blcok(self);
                 }
             }
+
+            [array removeAllObjects];
         }
     }
     {
-        NSArray *array = [self LJCustomerDeallocClass_blockArray_OptionOnce];
+        NSMutableArray *array = [self LJCustomerDeallocClass_blockArray_OptionOnce];
 
         if (array) {
             for (customerDeallocBlock blcok in array) {
@@ -98,6 +100,8 @@
                     blcok(self);
                 }
             }
+
+            [array removeAllObjects];
         }
     }
 
