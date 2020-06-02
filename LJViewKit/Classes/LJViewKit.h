@@ -14,7 +14,9 @@ typedef void(^viewWindowChangeBlock)(UIView *view);
 
 typedef void(^viewSuperFrameChangeBlock)(UIView *view,UIView *superView,CGRect oldFrame,CGRect newFrame);
 
-typedef void(^viewAddSubView)(UIView *view,UIView *subView);
+typedef void(^viewBeAddSubView)(UIView *view,UIView *superView);
+
+typedef void(^viewRemoveView)(UIView *view,UIView *superView);
 
 typedef void(^objectDeallocBlock)(NSObject *object);
 
@@ -67,6 +69,22 @@ FOUNDATION_EXTERN void SetSuperViewFrameDidChangeBlock(UIView *view,viewSuperFra
 FOUNDATION_EXTERN void AddSuperViewFrameDidChangeBlock(UIView *view,viewSuperFrameChangeBlock block);
 FOUNDATION_EXTERN void AddSuperViewFrameDidChangeKeyBlock(UIView *view,NSString *key,viewSuperFrameChangeBlock block);
 
-FOUNDATION_EXTERN void SetViewAddSubViewBlock(UIView *view,viewAddSubView block);
-FOUNDATION_EXTERN void AddViewAddSubViewBlock(UIView *view,viewAddSubView block);
-FOUNDATION_EXTERN void AddViewAddSubViewKeyBlock(UIView *view,NSString *key,viewAddSubView block);
+
+FOUNDATION_EXTERN void SetViewWillAddSubViewBlock(UIView *view,viewBeAddSubView block);
+FOUNDATION_EXTERN void AddViewWillAddSubViewBlock(UIView *view,viewBeAddSubView block);
+FOUNDATION_EXTERN void AddViewWillAddSubViewKeyBlock(UIView *view,NSString *key,viewBeAddSubView block);
+
+
+FOUNDATION_EXTERN void SetViewDidAddSubViewBlock(UIView *view,viewBeAddSubView block);
+FOUNDATION_EXTERN void AddViewDidAddSubViewBlock(UIView *view,viewBeAddSubView block);
+FOUNDATION_EXTERN void AddViewDidAddSubViewKeyBlock(UIView *view,NSString *key,viewBeAddSubView block);
+
+
+FOUNDATION_EXTERN void SetViewWillRemoveBlock(UIView *view,viewRemoveView block);
+FOUNDATION_EXTERN void AddViewWillRemoveBlock(UIView *view,viewRemoveView block);
+FOUNDATION_EXTERN void AddViewWillRemoveKeyBlock(UIView *view,NSString *key,viewRemoveView block);
+
+
+FOUNDATION_EXTERN void SetViewDidRemoveBlock(UIView *view,viewRemoveView block);
+FOUNDATION_EXTERN void AddViewDidRemoveBlock(UIView *view,viewRemoveView block);
+FOUNDATION_EXTERN void AddViewDidRemoveKeyBlock(UIView *view,NSString *key,viewRemoveView block);

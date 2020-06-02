@@ -1,6 +1,6 @@
 {
   "name": "LJViewKit",
-  "version": "2.2.4",
+  "version": "2.3.0",
   "summary": "View大小变化监听",
   "description": "TODO: Add long description of the pod here.",
   "homepage": "https://github.com/lijian096870/LJViewKit",
@@ -13,7 +13,7 @@
   },
   "source": {
     "git": "https://github.com/lijian096870/LJViewKit.git",
-    "tag": "2.2.4"
+    "tag": "2.3.0"
   },
   "platforms": {
     "ios": "8.0"

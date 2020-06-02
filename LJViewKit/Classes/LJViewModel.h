@@ -11,8 +11,17 @@
 
 @interface LJViewModel : NSObject
 
-@property(nonatomic, copy) viewAddSubView       addSubViewBlock;
-@property(nonatomic, strong, readonly) NSArray  *_viewAddSubViewArray;
+@property(nonatomic, copy) viewRemoveView       WillremoveViewBlock;
+@property(nonatomic, strong, readonly) NSArray  *_viewWillRemoveViewArray;
+
+@property(nonatomic, copy) viewRemoveView       DidremoveViewBlock;
+@property(nonatomic, strong, readonly) NSArray  *_viewDidRemoveViewArray;
+
+@property(nonatomic, copy) viewBeAddSubView       WilladdSubViewBlock;
+@property(nonatomic, strong, readonly) NSArray  *_viewWillAddSubViewArray;
+
+@property(nonatomic, copy) viewBeAddSubView       DidaddSubViewBlock;
+@property(nonatomic, strong, readonly) NSArray  *_viewDidAddSubViewArray;
 
 @property(nonatomic, copy) viewSuperFrameChangeBlock    superWillChangeBlock;
 @property(nonatomic, strong, readonly) NSArray          *_superWillChangeArray;
@@ -70,11 +79,22 @@
 - (void)AddSuperViewFrameDidChangeBlock:(viewSuperFrameChangeBlock)block;
 - (void)AddSuperViewFrameDidChangeKeyBlock:(viewSuperFrameChangeBlock)block AndKey:(NSString *)key;
 
-- (void)SetViewAddSubViewBlock:(viewAddSubView)block;
+- (void)SetViewDidAddSubViewBlock:(viewBeAddSubView)block;
+- (void)AddViewDidAddSubViewBlock:(viewBeAddSubView)block;
+- (void)AddViewDidAddSubViewKeyBlock:(viewBeAddSubView)block AndKey:(NSString *)key;
 
-- (void)AddViewAddSubViewBlock:(viewAddSubView)block;
+- (void)SetViewWillAddSubViewBlock:(viewBeAddSubView)block;
+- (void)AddViewWillAddSubViewBlock:(viewBeAddSubView)block;
+- (void)AddViewWillAddSubViewKeyBlock:(viewBeAddSubView)block AndKey:(NSString *)key;
 
-- (void)AddViewAddSubViewKeyBlock:(viewAddSubView)block AndKey:(NSString *)key;
+- (void)SetViewDidRemoveBlock:(viewRemoveView)block;
+- (void)AddViewDidRemoveBlock:(viewRemoveView)block;
+- (void)AddViewDidRemoveKeyBlock:(viewRemoveView)block AndKey:(NSString *)key;
+
+
+- (void)SetViewWillRemoveBlock:(viewRemoveView)block;
+- (void)AddViewWillRemoveBlock:(viewRemoveView)block;
+- (void)AddViewWillRemoveKeyBlock:(viewRemoveView)block AndKey:(NSString *)key;
 
 - (instancetype)initWithView:(UIView *)view;
 
