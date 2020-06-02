@@ -101,7 +101,7 @@
 
 + (void)DidremovwSuperView:(UIView *)view AndBeRemoveView:(UIView *)beRemove {
     if ([beRemove isKindOfClass:UIView.class] && [view isKindOfClass:UIView.class]) {
-        LJViewModel *model = [view viewFrameChangeMoveWindowChangeModelMayBenil];
+        LJViewModel *model = [beRemove viewFrameChangeMoveWindowChangeModelMayBenil];
 
         if ([model isKindOfClass:LJViewModel.class]) {
             if (model.DidremoveViewBlock) {
@@ -119,7 +119,7 @@
 
 + (void)WillremovwSuperView:(UIView *)view AndBeRemoveView:(UIView *)beRemove {
     if ([beRemove isKindOfClass:UIView.class] && [view isKindOfClass:UIView.class]) {
-        LJViewModel *model = [view viewFrameChangeMoveWindowChangeModelMayBenil];
+        LJViewModel *model = [beRemove viewFrameChangeMoveWindowChangeModelMayBenil];
 
         if ([model isKindOfClass:LJViewModel.class]) {
             if (model.WillremoveViewBlock) {
