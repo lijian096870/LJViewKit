@@ -18,6 +18,8 @@ typedef void(^viewBeAddSubView)(UIView *view,UIView *superView);
 
 typedef void(^viewRemoveView)(UIView *view,UIView *superView);
 
+typedef void(^viewAddSubView)(UIView *view,UIView *subView);
+
 typedef void(^objectDeallocBlock)(NSObject *object);
 
 //kvc
@@ -88,3 +90,8 @@ FOUNDATION_EXTERN void AddViewWillRemoveKeyBlock(UIView *view,NSString *key,view
 FOUNDATION_EXTERN void SetViewDidRemoveBlock(UIView *view,viewRemoveView block);
 FOUNDATION_EXTERN void AddViewDidRemoveBlock(UIView *view,viewRemoveView block);
 FOUNDATION_EXTERN void AddViewDidRemoveKeyBlock(UIView *view,NSString *key,viewRemoveView block);
+
+
+FOUNDATION_EXTERN void SetViewAddSubViewBlock(UIView *view,viewAddSubView block);
+FOUNDATION_EXTERN void AddViewAddSubViewBlock(UIView *view,viewAddSubView block);
+FOUNDATION_EXTERN void AddViewAddSubViewKeyBlock(UIView *view,NSString *key,viewAddSubView block);

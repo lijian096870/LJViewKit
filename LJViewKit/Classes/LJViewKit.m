@@ -354,3 +354,29 @@ void AddViewDidRemoveKeyBlock(UIView *view, NSString *key, viewRemoveView block)
         [model AddViewDidRemoveKeyBlock:block AndKey:key];
     }
 }
+void SetViewAddSubViewBlock(UIView *view, viewAddSubView block)
+{
+    if ([view isKindOfClass:UIView.class] && block) {
+        [LJViewMethodExchangeUtil methodAddsubViewBlock_MethodExchang];
+        LJViewModel *model = [view viewFrameChangeMoveWindowChangeModel];
+        [model SetViewAddSubViewBlock:block];
+    }
+}
+
+void AddViewAddSubViewBlock(UIView *view, viewAddSubView block)
+{
+    if ([view isKindOfClass:UIView.class] && block) {
+        [LJViewMethodExchangeUtil methodAddsubViewBlock_MethodExchang];
+        LJViewModel *model = [view viewFrameChangeMoveWindowChangeModel];
+        [model AddViewAddSubViewBlock:block];
+    }
+}
+
+void AddViewAddSubViewKeyBlock(UIView *view, NSString *key, viewAddSubView block)
+{
+    if ([view isKindOfClass:UIView.class] && block) {
+        [LJViewMethodExchangeUtil methodAddsubViewBlock_MethodExchang];
+        LJViewModel *model = [view viewFrameChangeMoveWindowChangeModel];
+        [model AddViewAddSubViewKeyBlock:block AndKey:key];
+    }
+}

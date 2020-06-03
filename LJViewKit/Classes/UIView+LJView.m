@@ -26,6 +26,7 @@
     if ([view isKindOfClass:UIView.class]) {
         if (self == view) {} else {
             [LJViewSuperViewFrameChangeRuner DidaddSuperView:self AndBeAddView:view];
+            [LJViewSuperViewFrameChangeRuner addSubView:self AndBeAddView:view];
             [LJViewWindowChangeRuner didAddView:self andSubView:view];
         }
     }

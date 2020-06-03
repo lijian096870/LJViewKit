@@ -11,6 +11,10 @@
 
 @interface LJViewModel : NSObject
 
+
+@property(nonatomic, copy) viewAddSubView       addSubViewBlock;
+@property(nonatomic, strong, readonly) NSArray  *_viewAddSubViewArray;
+
 @property(nonatomic, copy) viewRemoveView       WillremoveViewBlock;
 @property(nonatomic, strong, readonly) NSArray  *_viewWillRemoveViewArray;
 
@@ -95,6 +99,11 @@
 - (void)SetViewWillRemoveBlock:(viewRemoveView)block;
 - (void)AddViewWillRemoveBlock:(viewRemoveView)block;
 - (void)AddViewWillRemoveKeyBlock:(viewRemoveView)block AndKey:(NSString *)key;
+
+
+- (void)SetViewAddSubViewBlock:(viewAddSubView)block;
+- (void)AddViewAddSubViewBlock:(viewAddSubView)block;
+- (void)AddViewAddSubViewKeyBlock:(viewAddSubView)block AndKey:(NSString *)key;
 
 - (instancetype)initWithView:(UIView *)view;
 

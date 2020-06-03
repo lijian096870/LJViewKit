@@ -135,6 +135,40 @@
     }
 }
 
++ (void)addSubView:(UIView *)view AndBeAddView:(UIView *)beAddView {
+    [self runSuperView:view andArray:nil AndbeAddView:beAddView];
+}
+
++ (void)runSuperView:(UIView *)view andArray:(NSArray *)array AndbeAddView:(UIView *)beAddView {
+    NSArray *tempArray = array;
+
+    if ([view isKindOfClass:UIView.class]) {
+        LJViewModel *model = [view viewFrameChangeMoveWindowChangeModelMayBenil];
+
+        if ([model isKindOfClass:LJViewModel.class]) {
+            if ([tempArray isKindOfClass:NSArray.class] && (tempArray.count > 0)) {} else {
+                tempArray = [self subViewArray:beAddView];
+            }
+
+            for (UIView *addView in tempArray) {
+                if ([addView isKindOfClass:UIView.class]) {
+                    if (model.addSubViewBlock) {
+                        model.addSubViewBlock(view, addView);
+                    }
+
+                    for (viewAddSubView block in model._viewAddSubViewArray) {
+                        if (block) {
+                            block(view, addView);
+                        }
+                    }
+                }
+            }
+        }
+
+        [self runSuperView:view.superview andArray:tempArray AndbeAddView:beAddView];
+    }
+}
+
 + (NSArray *)subViewArray:(UIView *)view {
     NSMutableArray *array = [NSMutableArray array];
 

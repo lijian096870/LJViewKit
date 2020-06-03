@@ -44,9 +44,32 @@
 @property(nonatomic, strong) NSMutableArray         *WillRemoveViewArray;
 @property(nonatomic, strong) NSMutableDictionary    *WillRemoveViewDictionary;
 
+@property(nonatomic, strong) NSMutableArray         *AddSubViewArray;
+@property(nonatomic, strong) NSMutableDictionary    *AddSubViewDictionary;
+
 @end
 
 @implementation LJViewModel
+
+- (void)SetViewAddSubViewBlock:(viewAddSubView)block {
+    self.addSubViewBlock = block;
+}
+
+- (void)AddViewAddSubViewBlock:(viewAddSubView)block {
+    if (block) {
+        [self.AddSubViewArray addObject:block];
+    }
+}
+
+- (void)AddViewAddSubViewKeyBlock:(viewAddSubView)block AndKey:(NSString *)key {
+    if ([key isKindOfClass:NSString.class] && (key.length > 0)) {
+        if (block) {
+            [self.AddSubViewDictionary setObject:block forKey:key];
+        }
+    } else {
+        [self AddViewAddSubViewBlock:block];
+    }
+}
 
 - (void)SetViewWillAddSubViewBlock:(viewBeAddSubView)block {
     if (block) {
@@ -174,6 +197,10 @@
     } else {
         [self AddSuperViewFrameDidChangeBlock:block];
     }
+}
+
+- (NSArray *)_viewAddSubViewArray {
+    return [self byDictionaryKey:self.AddSubViewDictionary AndArray:self.AddSubViewArray];
 }
 
 - (NSArray *)_viewWillRemoveViewArray {
@@ -622,6 +649,22 @@
     }
 
     return _DidRemoveViewDictionary;
+}
+
+- (NSMutableArray *)AddSubViewArray {
+    if (_AddSubViewArray == nil) {
+        _AddSubViewArray = [NSMutableArray array];
+    }
+
+    return _AddSubViewArray;
+}
+
+- (NSMutableDictionary *)AddSubViewDictionary {
+    if (_AddSubViewDictionary == nil) {
+        _AddSubViewDictionary = [NSMutableDictionary dictionary];
+    }
+
+    return _AddSubViewDictionary;
 }
 
 @end
