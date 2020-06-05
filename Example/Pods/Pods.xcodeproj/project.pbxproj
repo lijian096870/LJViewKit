@@ -7,43 +7,49 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		04761FEAD04DD677608E84F5D2E989FD /* LJViewKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AE8ACADE54242C3916D21195656C306 /* LJViewKit-dummy.m */; };
+		0487AF3A5AAB6E0322110A97DA030A5D /* LJViewUpdateConstraintsModel.h in Headers */ = {isa = PBXBuildFile; fileRef = EB5519FCD31E210D2A2460B8EAE7FF76 /* LJViewUpdateConstraintsModel.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		0978FEF1E925744EEAF7E76217BF4A86 /* FBSnapshotTestCase.h in Headers */ = {isa = PBXBuildFile; fileRef = BF231DD85753C39424F0F58A879E8294 /* FBSnapshotTestCase.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		097B2D795948586501417F94D911F471 /* LJViewSuperViewFrameChangeRuner.h in Headers */ = {isa = PBXBuildFile; fileRef = E2B207ECD5D46C232B093136BAF4EE10 /* LJViewSuperViewFrameChangeRuner.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		0C7749E67F83A7659788718D9813025C /* LJViewWindowChangeRuner.m in Sources */ = {isa = PBXBuildFile; fileRef = 5612976378060B4AF1766F2E6C708D4C /* LJViewWindowChangeRuner.m */; };
-		1226E0FFECFB30DDBC144DB2147CD3C6 /* LJViewMethodExchangeUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 25B3457C866CAC39BE6F3D1DCD565392 /* LJViewMethodExchangeUtil.m */; };
-		17B1A35AF9B729E344E8B3933B83B373 /* LJViewSuperViewFrameChangeRuner.m in Sources */ = {isa = PBXBuildFile; fileRef = B8AA8F4786C63F8BA240275F3C51E855 /* LJViewSuperViewFrameChangeRuner.m */; };
+		0DC1A1713BE38CF1A824A13AA66D9EC1 /* UIView+LJKVCView.m in Sources */ = {isa = PBXBuildFile; fileRef = 91C0F8B6DC004D9418790B47B39B7E7A /* UIView+LJKVCView.m */; };
 		19F37CC50E23DE48D4345923514B8F98 /* UIApplication+StrictKeyWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = AA305E8AE2A0531EB3AA3E9958E7E2E5 /* UIApplication+StrictKeyWindow.m */; };
-		235BC795E54B10094E8D482CD524372A /* UIView+LJKVCView.h in Headers */ = {isa = PBXBuildFile; fileRef = 299131B36200096EF9EC20F69F1A556E /* UIView+LJKVCView.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		2A47B9C4237481E2AF4714A76BDF4D13 /* LJViewKit.m in Sources */ = {isa = PBXBuildFile; fileRef = BF9DA95028B08FEAEB97BDA7BC062F10 /* LJViewKit.m */; };
-		3B9BA387A98ACF545B3A817BFE5E73C8 /* LJViewModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 67A0727B724852355CA7A6DAA952DB5E /* LJViewModel.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		4DADBA1A981CA2CF4BA21B27DDC97982 /* UIView+LJKVCView.m in Sources */ = {isa = PBXBuildFile; fileRef = 057ED75D88573DCA3E84AF8FAE1E9A60 /* UIView+LJKVCView.m */; };
+		3A7F6E05CC4B3DBF0826A87BF01AFDA6 /* LJViewWindowChangeRuner.m in Sources */ = {isa = PBXBuildFile; fileRef = ADD84BA2B0A6BCF6968BA870BD8E55A1 /* LJViewWindowChangeRuner.m */; };
+		41065BF74D393BC0205A0189411B3D3A /* LJViewWindowChangeRuner.h in Headers */ = {isa = PBXBuildFile; fileRef = EBABD0BB59BBE51E16D1B21B20A0A3DB /* LJViewWindowChangeRuner.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		50544CC39838135DDBF0047A180E97F4 /* FBSnapshotTestCasePlatform.h in Headers */ = {isa = PBXBuildFile; fileRef = 1BB8800FEBEFE94A390F54FF049C0F04 /* FBSnapshotTestCasePlatform.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		55C8692D439467C4194D7B159D56BAC2 /* LJViewSuperViewFrameChangeRuner.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C3BAF229BBC383EC05196FFC63E1EA2 /* LJViewSuperViewFrameChangeRuner.m */; };
 		5693A08347C5CFEBCEBAA2AED5FADEE1 /* FBSnapshotTestCasePlatform.m in Sources */ = {isa = PBXBuildFile; fileRef = D24D77D9EBB30FD63D72D5303A60061F /* FBSnapshotTestCasePlatform.m */; };
 		59D121486E3B5E1E0BB2F36C76A65C8F /* Pods-LJViewKit_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 31A15F3033B22E55513DE3E3AE4D36D0 /* Pods-LJViewKit_Tests-umbrella.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		5A8C0BED8602D358FB934BB78D01EE78 /* NSObject+CustomerDealloc.h in Headers */ = {isa = PBXBuildFile; fileRef = 783FFDA90781350415AB63C92922AF40 /* NSObject+CustomerDealloc.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		61A4C0AB50C6E3B62203E946E6875A9F /* Pods-LJViewKit_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D64A5EBC26841BA662C63C70B8B2333 /* Pods-LJViewKit_Example-dummy.m */; };
-		638EE5BFC78255E6066BB5D9CCDAEB58 /* NSObject+CustomerDealloc.h in Headers */ = {isa = PBXBuildFile; fileRef = 6E58A7F03904C5AED9AC9160E142E5AD /* NSObject+CustomerDealloc.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		703FDA27FBAB63EE8A0569C4390F89E8 /* LJViewKit.h in Headers */ = {isa = PBXBuildFile; fileRef = ED4F4223D113CB789C82447514E820EF /* LJViewKit.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		672F2FE4070897668BAA32EEC7C5A033 /* UIView+updateConstraints.h in Headers */ = {isa = PBXBuildFile; fileRef = 79461068C1DFCC97055F297D7A7E0A50 /* UIView+updateConstraints.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		77963FF7EE2C6BF810466A85D700811E /* FBSnapshotTestController.m in Sources */ = {isa = PBXBuildFile; fileRef = 946BF97354D4762FF89FF62BB2493AAB /* FBSnapshotTestController.m */; };
+		8015FFB6738F6ECCD42849E6CE0AB9B1 /* LJViewKit.m in Sources */ = {isa = PBXBuildFile; fileRef = D20B97F0CF3AE8AAACECD24910BBD251 /* LJViewKit.m */; };
 		87D6F8413A7B375C836E57CCAD550A7F /* SwiftSupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D9ECE87ECC280ED44FEE10A626B490D /* SwiftSupport.swift */; };
 		8C0B5EBDF83DDC66A416370F936B9A00 /* UIApplication+StrictKeyWindow.h in Headers */ = {isa = PBXBuildFile; fileRef = B2869E4C7500F81B855421AD3A428F7B /* UIApplication+StrictKeyWindow.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		9CBA0D34A194BD92B896ADD50A33D738 /* LJViewMethodExchangeUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = B7A14D2AD17A4186E8BF9CAFFA5CC303 /* LJViewMethodExchangeUtil.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		9E854CDD4C7155B11ECDEA5DFD105CDA /* UIView+LJView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B005A9FF3C94C308DA04A5F08485EC5 /* UIView+LJView.m */; };
+		A07B2414020A5C40F8CCEFA49B66FF4F /* LJViewMethodExchangeUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = EBDE7BC837DF6EC714DB2428864F06A9 /* LJViewMethodExchangeUtil.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		A457A948F248D2A52CD05F067B0C1367 /* UIImage+Compare.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A3BCBCDCE9AB1C81BEF4FF139B33C52 /* UIImage+Compare.m */; };
+		A7D865D08EB6B2D280D0472433AAE761 /* NSObject+CustomerDealloc.m in Sources */ = {isa = PBXBuildFile; fileRef = 155948326D7041A80C52ADC6B39D5D38 /* NSObject+CustomerDealloc.m */; };
 		AB3570007412B510F78B81D1A83E7FC9 /* FBSnapshotTestCase-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7D10E263DD0E2D7DFDEDB26AF6FE30DA /* FBSnapshotTestCase-umbrella.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		B14637C98A9A0F3372244BD1EDC86DFC /* LJViewWindowChangeRuner.h in Headers */ = {isa = PBXBuildFile; fileRef = 7F7E0BDD19E7F5CDB65C06667658C537 /* LJViewWindowChangeRuner.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		B89A9F0BB89D3CAE0A32869B0590804F /* NSObject+CustomerDealloc.m in Sources */ = {isa = PBXBuildFile; fileRef = D0776557A309FED83F958BE5654EB9A5 /* NSObject+CustomerDealloc.m */; };
+		B6B181412CDA8AE64F23B0964534EE89 /* UIView+LJKVCView.h in Headers */ = {isa = PBXBuildFile; fileRef = F1C84C9CCA988C4991189689F45B90F7 /* UIView+LJKVCView.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		B8ADA30C051A2790FE88BE07CBFFF592 /* UIImage+Diff.m in Sources */ = {isa = PBXBuildFile; fileRef = DF74AEB8FBA3B574B14913B6A0259E1A /* UIImage+Diff.m */; };
-		C0A6220489CD2263E894EFA5874D156F /* UIView+LJView.h in Headers */ = {isa = PBXBuildFile; fileRef = B377991902FAFD0AB0DD9E9011F487CF /* UIView+LJView.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		BC888B53707AAFF73B96FA30A47464E3 /* UIView+LJView.h in Headers */ = {isa = PBXBuildFile; fileRef = 04263350411C2D03ABD2D94449CCBBBF /* UIView+LJView.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		C227FD1C858148327AD6CF45F9BC35E4 /* UIImage+Diff.h in Headers */ = {isa = PBXBuildFile; fileRef = 25A6B83B99996AB0D345D1F73BBFADC0 /* UIImage+Diff.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		C237EACF4DFDC924FBCA59209BDF4C66 /* LJViewSuperViewFrameChangeRuner.h in Headers */ = {isa = PBXBuildFile; fileRef = 7A328800C2206065BB9B4304D98AE69D /* LJViewSuperViewFrameChangeRuner.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		C3CA256CC5C3308862AFF3218B47B684 /* UIImage+Compare.h in Headers */ = {isa = PBXBuildFile; fileRef = 133B70FDA298B1C75AEA6D9B4DFB9D7C /* UIImage+Compare.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		CBD39660A2AEA338F8D2CE18BEBECEF9 /* UIImage+Snapshot.m in Sources */ = {isa = PBXBuildFile; fileRef = A79A17A92B6BB3CD04A0E57CB43F8E4E /* UIImage+Snapshot.m */; };
+		CECB24C8FBCFAC0D16761AB8A5887EA1 /* LJViewFrameChangeNoRepeatModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 553F2D1902F484E981383DC33F6E3329 /* LJViewFrameChangeNoRepeatModel.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		D29899F703D6DBB60A964A8DB7752BCF /* LJViewUpdateConstraintsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F7D2141776FF419A075A59F487FB7130 /* LJViewUpdateConstraintsModel.m */; };
 		D5FAA5ED25EAEE61F6476D63E0CA9894 /* FBSnapshotTestCase-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E68205BA0BE03E12021F3128A765BC2E /* FBSnapshotTestCase-dummy.m */; };
 		D607E281B6103D213C2295CE59CC6658 /* FBSnapshotTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 801441A53595C4296307546E40FB19DF /* FBSnapshotTestCase.m */; };
-		E1102025A8456E1058184CD3CF74B864 /* LJViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 067F2B41415F4DF0F2F06485253D4220 /* LJViewModel.m */; };
-		E14AF5120A084ECC43EA8E01522061FB /* LJViewKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 62073E4258CFBFF2CF01B0432A6C4DFA /* LJViewKit-dummy.m */; };
+		E00EA7CCF739B0CEA10F9FA6BE2BCF4A /* LJViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A4B89C7B38675CE74067B167654C390F /* LJViewModel.m */; };
+		E0B382ED1FF6DB0703D8217343BE5A41 /* UIView+LJView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B56687CED327684EF5E01898B53C0A1 /* UIView+LJView.m */; };
+		ED1723B17C198AA569F2BFCDB8BE6C5C /* LJViewModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 3D6198CCF51ACEA5EBD05F598EE26657 /* LJViewModel.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		ED5A8A0E6C0102E45207210196AC4D86 /* Pods-LJViewKit_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 85171D6973415303A9B6BB41E6A0155B /* Pods-LJViewKit_Tests-dummy.m */; };
+		EE88E1AA4E167CC9161C3880314A0842 /* LJViewFrameChangeNoRepeatModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E0B52FFCD34ABE8D8F71776DA6221383 /* LJViewFrameChangeNoRepeatModel.m */; };
 		EFA45E70CD6224C8B68738ED9E97CA21 /* FBSnapshotTestController.h in Headers */ = {isa = PBXBuildFile; fileRef = B8688C495C7274D9CD6B569947115F5C /* FBSnapshotTestController.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		F316998B56D885B7A354301A526A1577 /* UIView+updateConstraints.m in Sources */ = {isa = PBXBuildFile; fileRef = 7210B8C9726C76113200AE7072B6623C /* UIView+updateConstraints.m */; };
 		F876F054886227B059B0778C6C1A0A83 /* UIImage+Snapshot.h in Headers */ = {isa = PBXBuildFile; fileRef = C69BBB5F7F16D373D86DBDE5AF4590E2 /* UIImage+Snapshot.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		FCBBAF180A9CC748A4816C5FAFB5D09D /* LJViewMethodExchangeUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B5C608E773C88D3EFFD6E990807D3B1 /* LJViewMethodExchangeUtil.m */; };
+		FE05069B19E2EC7DFDBAF39D165208F5 /* LJViewKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 9B2D3BDFF984CB11A03305198BC36D31 /* LJViewKit.h */; settings = {ATTRIBUTES = (Project, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,65 +77,71 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		057ED75D88573DCA3E84AF8FAE1E9A60 /* UIView+LJKVCView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIView+LJKVCView.m"; path = "LJViewKit/Classes/UIView+LJKVCView.m"; sourceTree = "<group>"; };
-		067F2B41415F4DF0F2F06485253D4220 /* LJViewModel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LJViewModel.m; path = LJViewKit/Classes/LJViewModel.m; sourceTree = "<group>"; };
+		04263350411C2D03ABD2D94449CCBBBF /* UIView+LJView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIView+LJView.h"; path = "LJViewKit/Classes/UIView+LJView.h"; sourceTree = "<group>"; };
 		0BEB80136C0EDCDFFB0612B5E9E20A92 /* Pods-LJViewKit_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-LJViewKit_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		133B70FDA298B1C75AEA6D9B4DFB9D7C /* UIImage+Compare.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+Compare.h"; path = "FBSnapshotTestCase/Categories/UIImage+Compare.h"; sourceTree = "<group>"; };
+		155948326D7041A80C52ADC6B39D5D38 /* NSObject+CustomerDealloc.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSObject+CustomerDealloc.m"; path = "LJViewKit/Classes/NSObject+CustomerDealloc.m"; sourceTree = "<group>"; };
+		16611756073EB1B6E7DC04DCD2795011 /* LJViewKit.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = LJViewKit.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		174A8F63D3488B1000590382452886D8 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
 		1A3BCBCDCE9AB1C81BEF4FF139B33C52 /* UIImage+Compare.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+Compare.m"; path = "FBSnapshotTestCase/Categories/UIImage+Compare.m"; sourceTree = "<group>"; };
-		1B005A9FF3C94C308DA04A5F08485EC5 /* UIView+LJView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIView+LJView.m"; path = "LJViewKit/Classes/UIView+LJView.m"; sourceTree = "<group>"; };
 		1BB8800FEBEFE94A390F54FF049C0F04 /* FBSnapshotTestCasePlatform.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSnapshotTestCasePlatform.h; path = FBSnapshotTestCase/FBSnapshotTestCasePlatform.h; sourceTree = "<group>"; };
 		25A6B83B99996AB0D345D1F73BBFADC0 /* UIImage+Diff.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+Diff.h"; path = "FBSnapshotTestCase/Categories/UIImage+Diff.h"; sourceTree = "<group>"; };
-		25B3457C866CAC39BE6F3D1DCD565392 /* LJViewMethodExchangeUtil.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LJViewMethodExchangeUtil.m; path = LJViewKit/Classes/LJViewMethodExchangeUtil.m; sourceTree = "<group>"; };
-		299131B36200096EF9EC20F69F1A556E /* UIView+LJKVCView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIView+LJKVCView.h"; path = "LJViewKit/Classes/UIView+LJKVCView.h"; sourceTree = "<group>"; };
 		2F636D660EF6259041A0D28E5AE1A9BD /* Pods-LJViewKit_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LJViewKit_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		31A15F3033B22E55513DE3E3AE4D36D0 /* Pods-LJViewKit_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-LJViewKit_Tests-umbrella.h"; sourceTree = "<group>"; };
 		34F183014646ADFA08D1C999981F6448 /* libPods-LJViewKit_Example.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-LJViewKit_Example.a"; path = "libPods-LJViewKit_Example.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3D6198CCF51ACEA5EBD05F598EE26657 /* LJViewModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LJViewModel.h; path = LJViewKit/Classes/LJViewModel.h; sourceTree = "<group>"; };
 		465570D4218BF349873EB798D3E44272 /* FBSnapshotTestCase.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = FBSnapshotTestCase.modulemap; sourceTree = "<group>"; };
-		482045FBED778781037AEEB818C299A8 /* LJViewKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LJViewKit-prefix.pch"; sourceTree = "<group>"; };
+		4AE8ACADE54242C3916D21195656C306 /* LJViewKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "LJViewKit-dummy.m"; sourceTree = "<group>"; };
+		4B56687CED327684EF5E01898B53C0A1 /* UIView+LJView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIView+LJView.m"; path = "LJViewKit/Classes/UIView+LJView.m"; sourceTree = "<group>"; };
 		4D09C6BD28959D8A9AEEA71F2229BA04 /* Pods-LJViewKit_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-LJViewKit_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		55F6BDA4520822E38699435EB653CE92 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
-		5612976378060B4AF1766F2E6C708D4C /* LJViewWindowChangeRuner.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LJViewWindowChangeRuner.m; path = LJViewKit/Classes/LJViewWindowChangeRuner.m; sourceTree = "<group>"; };
+		553F2D1902F484E981383DC33F6E3329 /* LJViewFrameChangeNoRepeatModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LJViewFrameChangeNoRepeatModel.h; path = LJViewKit/Classes/LJViewFrameChangeNoRepeatModel.h; sourceTree = "<group>"; };
 		5C4F31330DFA99D699E4BDC8C3573D73 /* libFBSnapshotTestCase.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libFBSnapshotTestCase.a; path = libFBSnapshotTestCase.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		5D64A5EBC26841BA662C63C70B8B2333 /* Pods-LJViewKit_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-LJViewKit_Example-dummy.m"; sourceTree = "<group>"; };
-		62073E4258CFBFF2CF01B0432A6C4DFA /* LJViewKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "LJViewKit-dummy.m"; sourceTree = "<group>"; };
-		67A0727B724852355CA7A6DAA952DB5E /* LJViewModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LJViewModel.h; path = LJViewKit/Classes/LJViewModel.h; sourceTree = "<group>"; };
-		6B4E86B10CC881422D505C80222146E6 /* LJViewKit.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = LJViewKit.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		6E58A7F03904C5AED9AC9160E142E5AD /* NSObject+CustomerDealloc.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSObject+CustomerDealloc.h"; path = "LJViewKit/Classes/NSObject+CustomerDealloc.h"; sourceTree = "<group>"; };
+		6442F580FF2542BE8D2A266E4C98B945 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		7210B8C9726C76113200AE7072B6623C /* UIView+updateConstraints.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIView+updateConstraints.m"; path = "LJViewKit/Classes/UIView+updateConstraints.m"; sourceTree = "<group>"; };
+		783FFDA90781350415AB63C92922AF40 /* NSObject+CustomerDealloc.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSObject+CustomerDealloc.h"; path = "LJViewKit/Classes/NSObject+CustomerDealloc.h"; sourceTree = "<group>"; };
+		79461068C1DFCC97055F297D7A7E0A50 /* UIView+updateConstraints.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIView+updateConstraints.h"; path = "LJViewKit/Classes/UIView+updateConstraints.h"; sourceTree = "<group>"; };
+		7A328800C2206065BB9B4304D98AE69D /* LJViewSuperViewFrameChangeRuner.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LJViewSuperViewFrameChangeRuner.h; path = LJViewKit/Classes/LJViewSuperViewFrameChangeRuner.h; sourceTree = "<group>"; };
 		7D10E263DD0E2D7DFDEDB26AF6FE30DA /* FBSnapshotTestCase-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FBSnapshotTestCase-umbrella.h"; sourceTree = "<group>"; };
 		7D31BE22AE4C01BCFFDCAED8888CF492 /* libPods-LJViewKit_Tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-LJViewKit_Tests.a"; path = "libPods-LJViewKit_Tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		7F7E0BDD19E7F5CDB65C06667658C537 /* LJViewWindowChangeRuner.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LJViewWindowChangeRuner.h; path = LJViewKit/Classes/LJViewWindowChangeRuner.h; sourceTree = "<group>"; };
 		801441A53595C4296307546E40FB19DF /* FBSnapshotTestCase.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSnapshotTestCase.m; path = FBSnapshotTestCase/FBSnapshotTestCase.m; sourceTree = "<group>"; };
 		8071C340068079503AFC3B6FABA00AEF /* Pods-LJViewKit_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-LJViewKit_Tests.modulemap"; sourceTree = "<group>"; };
 		85171D6973415303A9B6BB41E6A0155B /* Pods-LJViewKit_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-LJViewKit_Tests-dummy.m"; sourceTree = "<group>"; };
 		8D9ECE87ECC280ED44FEE10A626B490D /* SwiftSupport.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftSupport.swift; path = FBSnapshotTestCase/SwiftSupport.swift; sourceTree = "<group>"; };
+		91C0F8B6DC004D9418790B47B39B7E7A /* UIView+LJKVCView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIView+LJKVCView.m"; path = "LJViewKit/Classes/UIView+LJKVCView.m"; sourceTree = "<group>"; };
 		92E05E479EC8D38DF4AD79B7C8FD1C0A /* Pods-LJViewKit_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LJViewKit_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		946BF97354D4762FF89FF62BB2493AAB /* FBSnapshotTestController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSnapshotTestController.m; path = FBSnapshotTestCase/FBSnapshotTestController.m; sourceTree = "<group>"; };
+		9B2D3BDFF984CB11A03305198BC36D31 /* LJViewKit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LJViewKit.h; path = LJViewKit/Classes/LJViewKit.h; sourceTree = "<group>"; };
+		9B5C608E773C88D3EFFD6E990807D3B1 /* LJViewMethodExchangeUtil.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LJViewMethodExchangeUtil.m; path = LJViewKit/Classes/LJViewMethodExchangeUtil.m; sourceTree = "<group>"; };
+		9C3BAF229BBC383EC05196FFC63E1EA2 /* LJViewSuperViewFrameChangeRuner.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LJViewSuperViewFrameChangeRuner.m; path = LJViewKit/Classes/LJViewSuperViewFrameChangeRuner.m; sourceTree = "<group>"; };
 		9D651BB513E036A845A3F8E4BD58AC2A /* Pods-LJViewKit_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LJViewKit_Example.release.xcconfig"; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A15398CB8C2519BBB9469963188FE340 /* Pods-LJViewKit_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LJViewKit_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		A47F8C13515220EA401C0014A9EF807C /* FBSnapshotTestCase.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FBSnapshotTestCase.xcconfig; sourceTree = "<group>"; };
 		A48988D4F5B92BE432A5E246D59E66D8 /* FBSnapshotTestCase-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FBSnapshotTestCase-prefix.pch"; sourceTree = "<group>"; };
+		A4B89C7B38675CE74067B167654C390F /* LJViewModel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LJViewModel.m; path = LJViewKit/Classes/LJViewModel.m; sourceTree = "<group>"; };
 		A79A17A92B6BB3CD04A0E57CB43F8E4E /* UIImage+Snapshot.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+Snapshot.m"; path = "FBSnapshotTestCase/Categories/UIImage+Snapshot.m"; sourceTree = "<group>"; };
 		AA305E8AE2A0531EB3AA3E9958E7E2E5 /* UIApplication+StrictKeyWindow.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIApplication+StrictKeyWindow.m"; path = "FBSnapshotTestCase/Categories/UIApplication+StrictKeyWindow.m"; sourceTree = "<group>"; };
-		AD7EDB4A1ED55363C64029F0EAAB185E /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		ADD84BA2B0A6BCF6968BA870BD8E55A1 /* LJViewWindowChangeRuner.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LJViewWindowChangeRuner.m; path = LJViewKit/Classes/LJViewWindowChangeRuner.m; sourceTree = "<group>"; };
 		B2869E4C7500F81B855421AD3A428F7B /* UIApplication+StrictKeyWindow.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIApplication+StrictKeyWindow.h"; path = "FBSnapshotTestCase/Categories/UIApplication+StrictKeyWindow.h"; sourceTree = "<group>"; };
-		B377991902FAFD0AB0DD9E9011F487CF /* UIView+LJView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIView+LJView.h"; path = "LJViewKit/Classes/UIView+LJView.h"; sourceTree = "<group>"; };
-		B7A14D2AD17A4186E8BF9CAFFA5CC303 /* LJViewMethodExchangeUtil.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LJViewMethodExchangeUtil.h; path = LJViewKit/Classes/LJViewMethodExchangeUtil.h; sourceTree = "<group>"; };
 		B8688C495C7274D9CD6B569947115F5C /* FBSnapshotTestController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSnapshotTestController.h; path = FBSnapshotTestCase/FBSnapshotTestController.h; sourceTree = "<group>"; };
-		B8AA8F4786C63F8BA240275F3C51E855 /* LJViewSuperViewFrameChangeRuner.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LJViewSuperViewFrameChangeRuner.m; path = LJViewKit/Classes/LJViewSuperViewFrameChangeRuner.m; sourceTree = "<group>"; };
 		BD205CC8737985C117717FFC4B22C847 /* Pods-LJViewKit_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LJViewKit_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		BF231DD85753C39424F0F58A879E8294 /* FBSnapshotTestCase.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSnapshotTestCase.h; path = FBSnapshotTestCase/FBSnapshotTestCase.h; sourceTree = "<group>"; };
-		BF9DA95028B08FEAEB97BDA7BC062F10 /* LJViewKit.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LJViewKit.m; path = LJViewKit/Classes/LJViewKit.m; sourceTree = "<group>"; };
 		C69BBB5F7F16D373D86DBDE5AF4590E2 /* UIImage+Snapshot.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+Snapshot.h"; path = "FBSnapshotTestCase/Categories/UIImage+Snapshot.h"; sourceTree = "<group>"; };
-		D06CDC3DFC3D06E0A18E02C397B76783 /* LJViewKit.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = LJViewKit.xcconfig; sourceTree = "<group>"; };
-		D0776557A309FED83F958BE5654EB9A5 /* NSObject+CustomerDealloc.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSObject+CustomerDealloc.m"; path = "LJViewKit/Classes/NSObject+CustomerDealloc.m"; sourceTree = "<group>"; };
+		CC7E0BFCA06043FC1CBC231AF0A835AB /* LJViewKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LJViewKit-prefix.pch"; sourceTree = "<group>"; };
+		D20B97F0CF3AE8AAACECD24910BBD251 /* LJViewKit.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LJViewKit.m; path = LJViewKit/Classes/LJViewKit.m; sourceTree = "<group>"; };
 		D24D77D9EBB30FD63D72D5303A60061F /* FBSnapshotTestCasePlatform.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSnapshotTestCasePlatform.m; path = FBSnapshotTestCase/FBSnapshotTestCasePlatform.m; sourceTree = "<group>"; };
 		DE7C454115BD1E61D4650AA501AF4407 /* Pods-LJViewKit_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LJViewKit_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		DF74AEB8FBA3B574B14913B6A0259E1A /* UIImage+Diff.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+Diff.m"; path = "FBSnapshotTestCase/Categories/UIImage+Diff.m"; sourceTree = "<group>"; };
-		E2B207ECD5D46C232B093136BAF4EE10 /* LJViewSuperViewFrameChangeRuner.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LJViewSuperViewFrameChangeRuner.h; path = LJViewKit/Classes/LJViewSuperViewFrameChangeRuner.h; sourceTree = "<group>"; };
+		E0B52FFCD34ABE8D8F71776DA6221383 /* LJViewFrameChangeNoRepeatModel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LJViewFrameChangeNoRepeatModel.m; path = LJViewKit/Classes/LJViewFrameChangeNoRepeatModel.m; sourceTree = "<group>"; };
 		E447332B857B5C81895323FFF344D3AE /* libLJViewKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libLJViewKit.a; path = libLJViewKit.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		E5C6D33B51A6EA64C31EE1C476546A56 /* LJViewKit.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = LJViewKit.xcconfig; sourceTree = "<group>"; };
 		E68205BA0BE03E12021F3128A765BC2E /* FBSnapshotTestCase-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "FBSnapshotTestCase-dummy.m"; sourceTree = "<group>"; };
-		ED4F4223D113CB789C82447514E820EF /* LJViewKit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LJViewKit.h; path = LJViewKit/Classes/LJViewKit.h; sourceTree = "<group>"; };
+		EB5519FCD31E210D2A2460B8EAE7FF76 /* LJViewUpdateConstraintsModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LJViewUpdateConstraintsModel.h; path = LJViewKit/Classes/LJViewUpdateConstraintsModel.h; sourceTree = "<group>"; };
+		EBABD0BB59BBE51E16D1B21B20A0A3DB /* LJViewWindowChangeRuner.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LJViewWindowChangeRuner.h; path = LJViewKit/Classes/LJViewWindowChangeRuner.h; sourceTree = "<group>"; };
+		EBDE7BC837DF6EC714DB2428864F06A9 /* LJViewMethodExchangeUtil.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LJViewMethodExchangeUtil.h; path = LJViewKit/Classes/LJViewMethodExchangeUtil.h; sourceTree = "<group>"; };
+		F1C84C9CCA988C4991189689F45B90F7 /* UIView+LJKVCView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIView+LJKVCView.h"; path = "LJViewKit/Classes/UIView+LJKVCView.h"; sourceTree = "<group>"; };
+		F7D2141776FF419A075A59F487FB7130 /* LJViewUpdateConstraintsModel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LJViewUpdateConstraintsModel.m; path = LJViewKit/Classes/LJViewUpdateConstraintsModel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -140,7 +152,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		5E594C548FF1C72FA7CB2776B4A0D1AA /* Frameworks */ = {
+		54B509DDB9B55F82792DE22CC8F7293F /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -173,27 +185,13 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		5AC1FD95A9F08E6304B6DC14EE0A8FF3 /* LJViewKit */ = {
+		6A214E817DCEB473D21DEB5982C6308F /* LJViewKit */ = {
 			isa = PBXGroup;
 			children = (
-				ED4F4223D113CB789C82447514E820EF /* LJViewKit.h */,
-				BF9DA95028B08FEAEB97BDA7BC062F10 /* LJViewKit.m */,
-				B7A14D2AD17A4186E8BF9CAFFA5CC303 /* LJViewMethodExchangeUtil.h */,
-				25B3457C866CAC39BE6F3D1DCD565392 /* LJViewMethodExchangeUtil.m */,
-				67A0727B724852355CA7A6DAA952DB5E /* LJViewModel.h */,
-				067F2B41415F4DF0F2F06485253D4220 /* LJViewModel.m */,
-				E2B207ECD5D46C232B093136BAF4EE10 /* LJViewSuperViewFrameChangeRuner.h */,
-				B8AA8F4786C63F8BA240275F3C51E855 /* LJViewSuperViewFrameChangeRuner.m */,
-				7F7E0BDD19E7F5CDB65C06667658C537 /* LJViewWindowChangeRuner.h */,
-				5612976378060B4AF1766F2E6C708D4C /* LJViewWindowChangeRuner.m */,
-				6E58A7F03904C5AED9AC9160E142E5AD /* NSObject+CustomerDealloc.h */,
-				D0776557A309FED83F958BE5654EB9A5 /* NSObject+CustomerDealloc.m */,
-				299131B36200096EF9EC20F69F1A556E /* UIView+LJKVCView.h */,
-				057ED75D88573DCA3E84AF8FAE1E9A60 /* UIView+LJKVCView.m */,
-				B377991902FAFD0AB0DD9E9011F487CF /* UIView+LJView.h */,
-				1B005A9FF3C94C308DA04A5F08485EC5 /* UIView+LJView.m */,
-				D18EF8571D65C1B4101DF3AAF9317429 /* Pod */,
-				7E297A6F51CF7F6C0CBFBB8BB1879B35 /* Support Files */,
+				9B2D3BDFF984CB11A03305198BC36D31 /* LJViewKit.h */,
+				D69799AB7BF10BEBCDC4CA3AE99C5433 /* class */,
+				CBD4E0D42642B6BCCEA369F6EE5DF6A7 /* Pod */,
+				7F2E45AADDD4A3260BCE24BE0E0A0C39 /* Support Files */,
 			);
 			name = LJViewKit;
 			path = ../..;
@@ -214,6 +212,14 @@
 			path = "Target Support Files/Pods-LJViewKit_Tests";
 			sourceTree = "<group>";
 		};
+		734E87BD8AFC27DAACFFFA4B14483BAE /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6A214E817DCEB473D21DEB5982C6308F /* LJViewKit */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
 		76E303C6B5C7577EE3D8AB531F4BECDC /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -225,12 +231,12 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		7E297A6F51CF7F6C0CBFBB8BB1879B35 /* Support Files */ = {
+		7F2E45AADDD4A3260BCE24BE0E0A0C39 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				D06CDC3DFC3D06E0A18E02C397B76783 /* LJViewKit.xcconfig */,
-				62073E4258CFBFF2CF01B0432A6C4DFA /* LJViewKit-dummy.m */,
-				482045FBED778781037AEEB818C299A8 /* LJViewKit-prefix.pch */,
+				E5C6D33B51A6EA64C31EE1C476546A56 /* LJViewKit.xcconfig */,
+				4AE8ACADE54242C3916D21195656C306 /* LJViewKit-dummy.m */,
+				CC7E0BFCA06043FC1CBC231AF0A835AB /* LJViewKit-prefix.pch */,
 			);
 			name = "Support Files";
 			path = "Example/Pods/Target Support Files/LJViewKit";
@@ -249,14 +255,6 @@
 			path = "Target Support Files/Pods-LJViewKit_Example";
 			sourceTree = "<group>";
 		};
-		B708803A8EBDD3883FFC25EA308219F2 /* Development Pods */ = {
-			isa = PBXGroup;
-			children = (
-				5AC1FD95A9F08E6304B6DC14EE0A8FF3 /* LJViewKit */,
-			);
-			name = "Development Pods";
-			sourceTree = "<group>";
-		};
 		C81A9D7A2662C6529C83A937F7F2020A /* SwiftSupport */ = {
 			isa = PBXGroup;
 			children = (
@@ -265,26 +263,26 @@
 			name = SwiftSupport;
 			sourceTree = "<group>";
 		};
+		CBD4E0D42642B6BCCEA369F6EE5DF6A7 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				6442F580FF2542BE8D2A266E4C98B945 /* LICENSE */,
+				16611756073EB1B6E7DC04DCD2795011 /* LJViewKit.podspec */,
+				174A8F63D3488B1000590382452886D8 /* README.md */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
 		CF1408CF629C7361332E53B88F7BD30C = {
 			isa = PBXGroup;
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
-				B708803A8EBDD3883FFC25EA308219F2 /* Development Pods */,
+				734E87BD8AFC27DAACFFFA4B14483BAE /* Development Pods */,
 				D89477F20FB1DE18A04690586D7808C4 /* Frameworks */,
 				E81A37DBDE41E671312C56736544E2FA /* Pods */,
 				76E303C6B5C7577EE3D8AB531F4BECDC /* Products */,
 				417F8EA121F2E3FFB4C6BD816E738FB3 /* Targets Support Files */,
 			);
-			sourceTree = "<group>";
-		};
-		D18EF8571D65C1B4101DF3AAF9317429 /* Pod */ = {
-			isa = PBXGroup;
-			children = (
-				55F6BDA4520822E38699435EB653CE92 /* LICENSE */,
-				6B4E86B10CC881422D505C80222146E6 /* LJViewKit.podspec */,
-				AD7EDB4A1ED55363C64029F0EAAB185E /* README.md */,
-			);
-			name = Pod;
 			sourceTree = "<group>";
 		};
 		D1C46F65B318C3FF52C7DC0A4ACDAF1E /* Core */ = {
@@ -306,6 +304,34 @@
 				A79A17A92B6BB3CD04A0E57CB43F8E4E /* UIImage+Snapshot.m */,
 			);
 			name = Core;
+			sourceTree = "<group>";
+		};
+		D69799AB7BF10BEBCDC4CA3AE99C5433 /* class */ = {
+			isa = PBXGroup;
+			children = (
+				553F2D1902F484E981383DC33F6E3329 /* LJViewFrameChangeNoRepeatModel.h */,
+				E0B52FFCD34ABE8D8F71776DA6221383 /* LJViewFrameChangeNoRepeatModel.m */,
+				D20B97F0CF3AE8AAACECD24910BBD251 /* LJViewKit.m */,
+				EBDE7BC837DF6EC714DB2428864F06A9 /* LJViewMethodExchangeUtil.h */,
+				9B5C608E773C88D3EFFD6E990807D3B1 /* LJViewMethodExchangeUtil.m */,
+				3D6198CCF51ACEA5EBD05F598EE26657 /* LJViewModel.h */,
+				A4B89C7B38675CE74067B167654C390F /* LJViewModel.m */,
+				7A328800C2206065BB9B4304D98AE69D /* LJViewSuperViewFrameChangeRuner.h */,
+				9C3BAF229BBC383EC05196FFC63E1EA2 /* LJViewSuperViewFrameChangeRuner.m */,
+				EB5519FCD31E210D2A2460B8EAE7FF76 /* LJViewUpdateConstraintsModel.h */,
+				F7D2141776FF419A075A59F487FB7130 /* LJViewUpdateConstraintsModel.m */,
+				EBABD0BB59BBE51E16D1B21B20A0A3DB /* LJViewWindowChangeRuner.h */,
+				ADD84BA2B0A6BCF6968BA870BD8E55A1 /* LJViewWindowChangeRuner.m */,
+				783FFDA90781350415AB63C92922AF40 /* NSObject+CustomerDealloc.h */,
+				155948326D7041A80C52ADC6B39D5D38 /* NSObject+CustomerDealloc.m */,
+				F1C84C9CCA988C4991189689F45B90F7 /* UIView+LJKVCView.h */,
+				91C0F8B6DC004D9418790B47B39B7E7A /* UIView+LJKVCView.m */,
+				04263350411C2D03ABD2D94449CCBBBF /* UIView+LJView.h */,
+				4B56687CED327684EF5E01898B53C0A1 /* UIView+LJView.m */,
+				79461068C1DFCC97055F297D7A7E0A50 /* UIView+updateConstraints.h */,
+				7210B8C9726C76113200AE7072B6623C /* UIView+updateConstraints.m */,
+			);
+			name = class;
 			sourceTree = "<group>";
 		};
 		D89477F20FB1DE18A04690586D7808C4 /* Frameworks */ = {
@@ -350,25 +376,28 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		110AEAF74EF2F24E14BFA5109F5B59F0 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CECB24C8FBCFAC0D16761AB8A5887EA1 /* LJViewFrameChangeNoRepeatModel.h in Headers */,
+				FE05069B19E2EC7DFDBAF39D165208F5 /* LJViewKit.h in Headers */,
+				A07B2414020A5C40F8CCEFA49B66FF4F /* LJViewMethodExchangeUtil.h in Headers */,
+				ED1723B17C198AA569F2BFCDB8BE6C5C /* LJViewModel.h in Headers */,
+				C237EACF4DFDC924FBCA59209BDF4C66 /* LJViewSuperViewFrameChangeRuner.h in Headers */,
+				0487AF3A5AAB6E0322110A97DA030A5D /* LJViewUpdateConstraintsModel.h in Headers */,
+				41065BF74D393BC0205A0189411B3D3A /* LJViewWindowChangeRuner.h in Headers */,
+				5A8C0BED8602D358FB934BB78D01EE78 /* NSObject+CustomerDealloc.h in Headers */,
+				B6B181412CDA8AE64F23B0964534EE89 /* UIView+LJKVCView.h in Headers */,
+				BC888B53707AAFF73B96FA30A47464E3 /* UIView+LJView.h in Headers */,
+				672F2FE4070897668BAA32EEC7C5A033 /* UIView+updateConstraints.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		1D6979C94B1BD0CD559836D5D181ED4F /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		4F14F1EC64CDCCAAB7EEDF6F9A74DD80 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				703FDA27FBAB63EE8A0569C4390F89E8 /* LJViewKit.h in Headers */,
-				9CBA0D34A194BD92B896ADD50A33D738 /* LJViewMethodExchangeUtil.h in Headers */,
-				3B9BA387A98ACF545B3A817BFE5E73C8 /* LJViewModel.h in Headers */,
-				097B2D795948586501417F94D911F471 /* LJViewSuperViewFrameChangeRuner.h in Headers */,
-				B14637C98A9A0F3372244BD1EDC86DFC /* LJViewWindowChangeRuner.h in Headers */,
-				638EE5BFC78255E6066BB5D9CCDAEB58 /* NSObject+CustomerDealloc.h in Headers */,
-				235BC795E54B10094E8D482CD524372A /* UIView+LJKVCView.h in Headers */,
-				C0A6220489CD2263E894EFA5874D156F /* UIView+LJView.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -418,11 +447,11 @@
 		};
 		8388784D06D65499923C22F2C3F173E1 /* LJViewKit */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = EAC60C41572B12610DCC28C9FCEFAF63 /* Build configuration list for PBXNativeTarget "LJViewKit" */;
+			buildConfigurationList = 7E182B8A380CD56E615596B3F6B1DC95 /* Build configuration list for PBXNativeTarget "LJViewKit" */;
 			buildPhases = (
-				4F14F1EC64CDCCAAB7EEDF6F9A74DD80 /* Headers */,
-				F662BC1E47565BEA1A7E99F70E619FE9 /* Sources */,
-				5E594C548FF1C72FA7CB2776B4A0D1AA /* Frameworks */,
+				110AEAF74EF2F24E14BFA5109F5B59F0 /* Headers */,
+				A720B1121AAEC9A3943A335360661D1D /* Sources */,
+				54B509DDB9B55F82792DE22CC8F7293F /* Frameworks */,
 			);
 			buildRules = (
 			);
@@ -559,19 +588,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F662BC1E47565BEA1A7E99F70E619FE9 /* Sources */ = {
+		A720B1121AAEC9A3943A335360661D1D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E14AF5120A084ECC43EA8E01522061FB /* LJViewKit-dummy.m in Sources */,
-				2A47B9C4237481E2AF4714A76BDF4D13 /* LJViewKit.m in Sources */,
-				1226E0FFECFB30DDBC144DB2147CD3C6 /* LJViewMethodExchangeUtil.m in Sources */,
-				E1102025A8456E1058184CD3CF74B864 /* LJViewModel.m in Sources */,
-				17B1A35AF9B729E344E8B3933B83B373 /* LJViewSuperViewFrameChangeRuner.m in Sources */,
-				0C7749E67F83A7659788718D9813025C /* LJViewWindowChangeRuner.m in Sources */,
-				B89A9F0BB89D3CAE0A32869B0590804F /* NSObject+CustomerDealloc.m in Sources */,
-				4DADBA1A981CA2CF4BA21B27DDC97982 /* UIView+LJKVCView.m in Sources */,
-				9E854CDD4C7155B11ECDEA5DFD105CDA /* UIView+LJView.m in Sources */,
+				EE88E1AA4E167CC9161C3880314A0842 /* LJViewFrameChangeNoRepeatModel.m in Sources */,
+				04761FEAD04DD677608E84F5D2E989FD /* LJViewKit-dummy.m in Sources */,
+				8015FFB6738F6ECCD42849E6CE0AB9B1 /* LJViewKit.m in Sources */,
+				FCBBAF180A9CC748A4816C5FAFB5D09D /* LJViewMethodExchangeUtil.m in Sources */,
+				E00EA7CCF739B0CEA10F9FA6BE2BCF4A /* LJViewModel.m in Sources */,
+				55C8692D439467C4194D7B159D56BAC2 /* LJViewSuperViewFrameChangeRuner.m in Sources */,
+				D29899F703D6DBB60A964A8DB7752BCF /* LJViewUpdateConstraintsModel.m in Sources */,
+				3A7F6E05CC4B3DBF0826A87BF01AFDA6 /* LJViewWindowChangeRuner.m in Sources */,
+				A7D865D08EB6B2D280D0472433AAE761 /* NSObject+CustomerDealloc.m in Sources */,
+				0DC1A1713BE38CF1A824A13AA66D9EC1 /* UIView+LJKVCView.m in Sources */,
+				E0B382ED1FF6DB0703D8217343BE5A41 /* UIView+LJView.m in Sources */,
+				F316998B56D885B7A354301A526A1577 /* UIView+updateConstraints.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -599,9 +631,9 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		0683F9B508DEB542EEC01E0796837FC5 /* Debug */ = {
+		0FE330F6338053A1CC3BBBC0A2CB3162 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D06CDC3DFC3D06E0A18E02C397B76783 /* LJViewKit.xcconfig */;
+			baseConfigurationReference = E5C6D33B51A6EA64C31EE1C476546A56 /* LJViewKit.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -620,8 +652,9 @@
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
 			};
-			name = Debug;
+			name = Release;
 		};
 		27B5400709F7BF6EB6E8CFE8F6DE8586 /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -663,31 +696,6 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		3DEE434F6DFDD1456E5D4B6A3E853B06 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = D06CDC3DFC3D06E0A18E02C397B76783 /* LJViewKit.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				GCC_PREFIX_HEADER = "Target Support Files/LJViewKit/LJViewKit-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRIVATE_HEADERS_FOLDER_PATH = "";
-				PRODUCT_MODULE_NAME = LJViewKit;
-				PRODUCT_NAME = LJViewKit;
-				PUBLIC_HEADERS_FOLDER_PATH = "";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};
@@ -911,6 +919,30 @@
 			};
 			name = Debug;
 		};
+		E42788BFAD8B48E29CFE9746F3A73948 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E5C6D33B51A6EA64C31EE1C476546A56 /* LJViewKit.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/LJViewKit/LJViewKit-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = LJViewKit;
+				PRODUCT_NAME = LJViewKit;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -932,6 +964,15 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		7E182B8A380CD56E615596B3F6B1DC95 /* Build configuration list for PBXNativeTarget "LJViewKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E42788BFAD8B48E29CFE9746F3A73948 /* Debug */,
+				0FE330F6338053A1CC3BBBC0A2CB3162 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		82B0EF70A72AA3989573962DE857F4F7 /* Build configuration list for PBXNativeTarget "Pods-LJViewKit_Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -946,15 +987,6 @@
 			buildConfigurations = (
 				B486996ACB8E31E53119762A5DF03B62 /* Debug */,
 				27B5400709F7BF6EB6E8CFE8F6DE8586 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		EAC60C41572B12610DCC28C9FCEFAF63 /* Build configuration list for PBXNativeTarget "LJViewKit" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				0683F9B508DEB542EEC01E0796837FC5 /* Debug */,
-				3DEE434F6DFDD1456E5D4B6A3E853B06 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

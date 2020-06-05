@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'LJViewKit'
-  s.version          = '2.3.2'
+  s.version          = '2.4.0'
   s.summary          = 'View大小变化监听'
 
 # This description is used to generate tags and improve search results.
@@ -28,10 +28,15 @@ TODO: Add long description of the pod here.
 
   s.ios.deployment_target = '8.0'
 
-  s.source_files = 'LJViewKit/Classes/**/*'
-  
 
-s.public_header_files = 'LJViewKit/Classes/LJViewKit.h'
+  s.public_header_files = 'LJViewKit/Classes/LJViewKit.h'
 
-s.frameworks = 'UIKit'
+  s.source_files = 'LJViewKit/Classes/LJViewKit.h'
+   
+  s.subspec 'class' do |ss|
+    ss.source_files = 'LJViewKit/Classes/**/*'
+  end
+    
+  s.frameworks = 'UIKit'
+   
 end
