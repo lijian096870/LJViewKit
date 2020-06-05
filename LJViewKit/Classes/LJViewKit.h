@@ -31,10 +31,6 @@ FOUNDATION_EXTERN void viewAddFrameChangeBlock(UIView *view,viewFrameChangeBlock
 FOUNDATION_EXTERN void objectAddObjectDeallocBlock(NSObject *object,objectDeallocBlock block);
 
 
-FOUNDATION_EXTERN void SetFrameWillChangeBlock(UIView *view,viewFrameChangeBlock block);
-FOUNDATION_EXTERN void AddFrameWillChangeBlock(UIView *view,viewFrameChangeBlock block);
-FOUNDATION_EXTERN void AddFrameWillChangeKeyBlock(UIView *view,NSString *key,viewFrameChangeBlock block);
-
 
 FOUNDATION_EXTERN void SetFrameDidChangeBlock(UIView *view,viewFrameChangeBlock block);
 FOUNDATION_EXTERN void AddFrameDidChangeBlock(UIView *view,viewFrameChangeBlock block);
@@ -60,10 +56,6 @@ FOUNDATION_EXTERN void SetWindowDidAddBlock(UIView *view,viewWindowChangeBlock b
 FOUNDATION_EXTERN void AddWindowDidAddBlock(UIView *view,viewWindowChangeBlock block);
 FOUNDATION_EXTERN void AddWindowDidAddKeyBlock(UIView *view,NSString *key,viewWindowChangeBlock block);
 
-
-FOUNDATION_EXTERN void SetSuperViewFrameWillChangeBlock(UIView *view,viewSuperFrameChangeBlock block);
-FOUNDATION_EXTERN void AddSuperViewFrameWillChangeBlock(UIView *view,viewSuperFrameChangeBlock block);
-FOUNDATION_EXTERN void AddSuperViewFrameWillChangeKeyBlock(UIView *view,NSString *key,viewSuperFrameChangeBlock block);
 
 
 FOUNDATION_EXTERN void SetSuperViewFrameDidChangeBlock(UIView *view,viewSuperFrameChangeBlock block);
